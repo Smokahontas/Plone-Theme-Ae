@@ -62,11 +62,17 @@ body h2, body h3 {
     font-size: 14px;
     font-style: italic;
     font-weight: 700;
-}
+    }
 a{
      color: #598C0B;
     }
 #content{
     background-color: #FFFFFF;
     color: #362524;
+    }
+@media(min-width:780px) and (max-width:979px) {
+   
+   {
+       width:700px;
+   }
     }
