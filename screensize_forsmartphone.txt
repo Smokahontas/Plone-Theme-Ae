@@ -1,0 +1,27 @@
+Iphone 5, iphone 5s,iphone 5c 
+--1136x640 px
+Iphone4s 
+--960x640 px
+Iphone3g
+--320x480 px 
+Samsung galaxy s 
+--480x800 px
+Samsung galaxy s4
+--1920x1080 px
+Samsung galaxy s3
+--1280x720 px
+Samsung galaxy s2
+--800x480 px
+Ipad1, ipad2
+--1024x768 px
+Ipad3 ipad4
+--2048x1536 px
+Ipad mini
+--1024x768 px
+Ipod2
+--480x320 px
+Ipod3
+--960x640 px
+Cube Tablet
+--1280x800 px
+
