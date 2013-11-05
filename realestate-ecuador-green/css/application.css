@@ -21,8 +21,6 @@
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     min-height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 body{
     background:#F6F3F3 url("../img/body_bg.jpg") repeat scroll left top ;
@@ -76,3 +74,11 @@ a{
        width:700px;
    }
     }
+.navbar-fixed-top, .navbar-fixed-bottom {
+    left: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 300px;
+    right: 0;
+    z-index: 1030;
+}
