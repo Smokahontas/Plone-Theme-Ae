@@ -81,4 +81,19 @@ a{
     top: 300px;
     right: 0;
     z-index: 1030;
-}
+    }
+#socialbar{
+    float:right;   
+    }
+#socialbar img{
+    width:25px;
+    height:25px;
+    float:right;  
+    margin-right:7px;
+    }
+.itemPadding{
+    text-align:center;
+    }
+
+
+
