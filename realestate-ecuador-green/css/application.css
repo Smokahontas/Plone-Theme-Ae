@@ -1,16 +1,27 @@
 .navbar-search .search-query {
     display:none;
     }
-    
-#header{
+#header-full{
     background-color: #598C0B;
     background-image: radial-gradient(#85B30B 475px, #598C0B 950px);
     font-family: "Istok Web","Arial Black",Gadget,sans-serif;
-    font-size: 48px;
     font-weight: 400;
     color: #FEFDFD;
+    width: 100%;
+    display: block;
+    min-height: 157px; 
+    margin:0px;
+    height: 40% !important;
+}
+
+#header{
+    font-family: "Istok Web","Arial Black",Gadget,sans-serif;
+    font-size: 48px;
+    font-weight: 400;
     min-height: 157px;
     width: 100%;
+    display: block;
+    min-height: 157px;
     }
 .navbar-inner {
     background-color: #DCC844;
@@ -21,6 +32,7 @@
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     min-height: 40px;
+    font-family: 'Cantora One', sans-serif;
 }
 body{
     background:#F6F3F3 url("../img/body_bg.jpg") repeat scroll left top ;
@@ -49,13 +61,10 @@ body{
     margin: 1em 0;
     width: 100%;
 }
-.footer.container{
-    background: transparent url("../img/bg-footer-greeny.png") no-repeat;
-    min-width: 100%;
-    }
-#portal-footer-wrapper{
-    background: transparent url("../img/bg-footer-greeny.png") no-repeat;
-    }
+.fullfooter{
+ background: transparent url("../img/bg-footer-greeny.png") no-repeat;
+    width: 100%;
+    }   
 body h2, body h3 {
     font-size: 14px;
     font-style: italic;
@@ -78,7 +87,6 @@ a{
     left: 0;
     margin-bottom: 0;
     position: relative;
-    top: 300px;
     right: 0;
     z-index: 1030;
     }
@@ -94,6 +102,44 @@ a{
 .itemPadding{
     text-align:center;
     }
+
+.subheader{
+ font-family: "Istok Web","Arial Black",Gadget,sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #FEFEFE;
+    position:relative;
+    margin-top:10px;
+}
+.main-header{
+    width:950px;  
+    margin:auto;
+}
+#secondary-nav{
+    background-color:#FFFEFF;
+    margin-right:7px;
+    height:25px;
+}
+#header.adtext11{
+    text-shadow: 2px 2px 2px #598C0B;
+}
+#global-content{
+    margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

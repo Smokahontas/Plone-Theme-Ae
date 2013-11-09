@@ -34,6 +34,7 @@
       <link rel="stylesheet" href="css/application.css"/>
       <link rel="stylesheet" href="jqueryui/css/eggplant/jquery-ui-1.8.5.custom.css"/>
       <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
       <!-- end CSS-->
 
       <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -46,7 +47,31 @@
       </head>
 
       <body>
-         <div class="navbar navbar-fixed-top">
+    <div id="global-content"><!-- take content in center-->
+    <div id="header-full">
+      <div class="main-header">
+            <div id="socialbar">
+                <a href="www.twitter.com"><img src="img/twicon.png"/></a>
+                <a href="www.facebook.com"><img src="img/fbicon.png"/></a>
+                <ul id="secondary-nav" class="nav pull-right">
+                     <li class="dropdown" data-dropdown="dropdown">
+                     <a class="dropdown-toggle" href="#">
+                        <span id="personaltool-menuheader">User</span>
+                        <b class="caret"></b></a>
+                     <ul class="dropdown-menu" id="personaltool-menu">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Logout</a></li>
+                     </ul>
+                     </li>
+                  </ul>
+            </div>
+            <div id="header" class="adtext11">
+               <br><br>Casas en Venta Ecuador
+            </div>
+            <div class="subheader">
+                Your destination for the best real estate in Ecuador - houses, apartments, condos, lots, ocean and commercial properties for sale and rent. An MLS-Ecuador Affiliate
+            </div>
+        <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                <div class="container">
                 <a class="btn btn-navbar" data-toggle="collapse"
@@ -67,33 +92,16 @@
                      </li>
                      <li><a href="#contact">Contact</a></li>
                   </ul>
-                  <ul id="secondary-nav" class="nav pull-right">
-                     <li class="dropdown" data-dropdown="dropdown">
-                     <a class="dropdown-toggle" href="#">
-                        <span id="personaltool-menuheader">User</span>
-                        <b class="caret"></b></a>
-                     <ul class="dropdown-menu" id="personaltool-menu">
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Logout</a></li>
-                     </ul>
-                     </li>
-                  </ul>
                   <form id="topsearchbox" class="navbar-search pull-right">
                      <input class="search-query" name="SearchableText" placeholder="Search"/>
                   </form>
                </div>
                </div>
             </div>
-         </div>
+         </div>   
+         </div><!-- close main header-->
+    </div><!-- close ful header-->
          <div id="container" class="container">
-    <!-- for test --><div id="socialbar">
-                        <a href="www.twitter.com"><img src="img/twicon.png"/></a>
-                        <a href="www.facebook.com"><img src="img/fbicon.png"/></a>
-                     </div>
-            <div id="header">
-               <img id="logo" src="img/logo.png"/>
-            </div>
-     <!--test-->    <div class="testnavi">navi</div>
             <div id="main" role="main" class="icons-on">
                <div>
                   <ul class="breadcrumb">
@@ -246,6 +254,7 @@
             </div>
 
             <div style="clear:both">&nbsp;</div>
+    <div class="fullfooter">
             <div class="footer container">
                <div id="portletFooterManager" class="row">
                   <div id="portletFooterA" class="span2">
@@ -281,9 +290,8 @@
                </div>
             </div>
          </div> <!--! end of #container -->
-         <div id="test1">
-            test1
-         </div><!-- only for testing my rule -->
+    </div>
+  </div><!-- take content in center-->
 
 
          <!-- JavaScript at the bottom for fast page loading -->
