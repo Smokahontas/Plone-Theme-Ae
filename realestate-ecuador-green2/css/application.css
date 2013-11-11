@@ -11,17 +11,17 @@
     display: block;
     min-height: 157px; 
     margin:0px;
-    height: 40% !important;
+    height: 50% !important;
 }
 
 #header{
     font-family: "Istok Web","Arial Black",Gadget,sans-serif;
     font-size: 48px;
     font-weight: 400;
-    min-height: 157px;
+    height: 50px;
     width: 100%;
     display: block;
-    min-height: 157px;
+    margin:0px auto 0;
     }
 .navbar-inner {
     background-color: #DCC844;
@@ -33,6 +33,7 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
     min-height: 40px;
     font-family: 'Cantora One', sans-serif;
+    bottom:40px;
 }
 body{
     background:#F6F3F3 url("../img/body_bg.jpg") repeat scroll left top ;
@@ -40,7 +41,6 @@ body{
     min-height: 100%;
     min-width: 100%;
     overflow: auto;
-    position: relative;
     width: auto !important;
     color: #362524;
     font-size: 12px;
@@ -50,21 +50,17 @@ body{
      background-color: #75AD0A;
     }
 .footer{
-    background-image: url("../plone/bg-footer-greeny.png");
     border-top: 1px solid #FFFFFF;
     padding-top: 10px;
+    background-color: transparent;
     }
 #doormat-container {
     background-color:transparent;
     float: left;
     font-size: 75%;
-    margin: 1em 0;
     width: 100%;
+    margin-left:50px;
 }
-.fullfooter{
- background: transparent url("../img/bg-footer-greeny.png") no-repeat;
-    width: 100%;
-    }   
 body h2, body h3 {
     font-size: 14px;
     font-style: italic;
@@ -77,8 +73,7 @@ a{
     background-color: #FFFFFF;
     color: #362524;
     }
-@media(min-width:780px) and (max-width:979px) {
-   
+@media(min-width:780px) and (max-width:979px) { 
    {
        width:700px;
    }
@@ -89,13 +84,14 @@ a{
     position: relative;
     right: 0;
     z-index: 1030;
+    margin-top:20px;
     }
 #socialbar{
     float:right;   
     }
 #socialbar img{
-    width:25px;
-    height:25px;
+    width:35px;
+    height:35px;
     float:right;  
     margin-right:7px;
     }
@@ -109,7 +105,7 @@ a{
     font-style: italic;
     color: #FEFEFE;
     position:relative;
-    margin-top:10px;
+    margin-top:30px;
 }
 .main-header{
     width:950px;  
@@ -124,22 +120,50 @@ a{
     text-shadow: 2px 2px 2px #598C0B;
 }
 #global-content{
-    margin:auto;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.adtext11{
+    margin-left:10px;   
+}
+#fullfooter{
+    width:100%;
+    position:relative;
+    background:transparent none no-repeat;
+    float:right;
+}
+#footer-bg-color{
+      background: radial-gradient(#85B30B 475px, #598C0B 950px) repeat scroll 0 0 #FF0000;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 60%;
+}
+#footer-bg{
+    background: radial-gradient(#85B30B 475px, #598C0B 950px) no-repeat scroll 0 0 #0000FF;
+    border-top-left-radius: 100%;
+    height: 400px;
+    position: absolute;
+    width: 40%;
+}
+#portal-footer{
+    background-color :transparent;
+}
+.footer{
+    padding-left:20px;
+}
+#portal-siteactions{
+    padding-right: 50px;
+    }
+#portal-colophon{
+    padding-right: 50px;
+}
+#content{
+ padding:17px;   
+}
+.mylogo{
+    background:transparent url:("../img/logops.png") no-repeat;
+    width:50px;
+    height:50px;
+    margin-top:40px
+}
