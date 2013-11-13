@@ -5,15 +5,29 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
-
+    <replace
+        css:theme="#mylogo a"
+        css:content="#portal-logo"
+    />
     <replace
         css:theme="div#test1"
         css:content="div#edit-bar"
         />
 
+
     <replace
-        css:theme="p#companycode"
-        css:content="a#portal-logo img"
+        css:theme=".casel1"
+        css:content=".lastCarousel"
+        method="raw"
+        />
+
+    <drop
+        css:content=".lastCarousel"
+        />
+
+    <replace
+        css:theme-children="div.movelogin"
+        css:content="dl#portal-personaltools"
         />
 
     <replace theme="/html/head/title" content="/html/head/title" />
@@ -82,9 +96,6 @@
         </div>
     </prepend>
 
-
-
-
     <copy css:theme="#topsearchbox" css:content="#portal-searchbox form" attributes="action"/>
     <replace css:theme="#center-column">
         <div id="center-column"><xsl:attribute name="class">
@@ -105,6 +116,7 @@
                     </xsl:for-each>
                 </div>
             </xsl:if>
+            <!--
             <div id="#viewlet-above-content">
                 <xsl:for-each css:select="#viewlet-above-content > *">
                     <xsl:if test="@id">
@@ -118,6 +130,7 @@
                     </xsl:if>
                 </xsl:for-each>
             </div>
+            -->
             <article>
                 <xsl:copy-of css:select="#kssPortalMessage"/>
                 <xsl:copy-of css:select=".portalMessage"/>
@@ -181,6 +194,7 @@
             <xi:include href="navigation-rules.xml"/>
         </xsl:for-each>
     </replace>
+<!--
     <replace css:theme-children="#personaltool-menu" 
         css:content-children="#portal-personaltools ul"/>
     <replace css:theme-children="#personaltool-menuheader" 
@@ -188,6 +202,12 @@
     <replace css:theme-children="#secondary-nav" css:if-content="#anon-personalbar">
         <li><xsl:copy-of css:select="#personaltools-login"/></li>
     </replace>
+-->
+
+    <replace
+        css:theme="div#mylogo img"
+        css:content="a#portal-logo img"
+        />
 
     <copy css:theme=".navbar-fixed-top .brand" css:content="#portal-logo" attributes="href"/>
     <replace css:theme-children=".breadcrumb">

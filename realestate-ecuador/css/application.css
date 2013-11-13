@@ -10,22 +10,27 @@
     width: 100%;
     display: block;
     min-height: 157px; 
-    margin:0px;
-    height: 50% !important;
+    margin:0;
 }
 
 #header{
     font-family: "Istok Web","Arial Black",Gadget,sans-serif;
-    font-size: 48px;
+    font-size: 30px;
     font-weight: 400;
     height: 50px;
     width: 100%;
     display: block;
-    margin:0px auto 0;
+    margin:0 auto 0;
+    margin-left:57px;
+    position:relative;
+    bottom:24px;
     }
 .navbar-inner {
     background-color: #DCC844;
     background-image: linear-gradient(#DCC844, #FEF7AC);
+    border: 1px solid #514a01;
+    border-bottom-color: #757575;
+    border-top-color: #685f01;
     }
 .navbar-inner {
     background-repeat: repeat-x;
@@ -50,7 +55,7 @@ body{
      background-color: #75AD0A;
     }
 .footer{
-    border-top: 1px solid #FFFFFF;
+    
     padding-top: 10px;
     background-color: transparent;
     }
@@ -59,7 +64,7 @@ body{
     float: left;
     font-size: 75%;
     width: 100%;
-    margin-left:50px;
+    margin-left:200px; 
 }
 body h2, body h3 {
     font-size: 14px;
@@ -74,9 +79,9 @@ a{
     color: #362524;
     }
 @media(min-width:780px) and (max-width:979px) { 
-   {
+    #global-content{
        width:700px;
-   }
+    }
     }
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
@@ -105,7 +110,10 @@ a{
     font-style: italic;
     color: #FEFEFE;
     position:relative;
-    margin-top:30px;
+    margin-top: 0px;
+    position: absolute;
+    top: 110px;
+    margin-left: 10px;
 }
 .main-header{
     width:950px;  
@@ -121,9 +129,6 @@ a{
 }
 #global-content{
 
-}
-.adtext11{
-    margin-left:10px;   
 }
 #fullfooter{
     width:100%;
@@ -148,6 +153,7 @@ a{
 }
 #portal-footer{
     background-color :transparent;
+    margin-left:60px; 
 }
 .footer{
     padding-left:20px;
@@ -159,11 +165,30 @@ a{
     padding-right: 50px;
 }
 #content{
- padding:17px;   
+    padding:17px;   
 }
-.mylogo{
-    background:transparent url:("../img/logops.png") no-repeat;
-    width:50px;
-    height:50px;
-    margin-top:40px
+#mylogo img{
+ float:left; 
+ width:50px;
+ height:50px;
+ position: relative;
+ top: 20px;
+}
+.adtext11{
+    margin-left:60px;
+    position: absolute;
+    text-shadow: 2px 2px 2px #598C0B;
+    font-size: 30px
+}
+.movelogin{
+    float:right;
+}
+.logo-bottom{
+    float:right;
+}
+.carousel {
+    margin:0;
+}
+div.scrollable div.items div.itemPadding {
+    margin:0;
 }
