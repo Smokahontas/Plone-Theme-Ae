@@ -31,6 +31,7 @@
     border: 1px solid #514a01;
     border-bottom-color: #757575;
     border-top-color: #685f01;
+    color: #362524;
     }
 .navbar-inner {
     background-repeat: repeat-x;
@@ -39,13 +40,27 @@
     min-height: 40px;
     font-family: 'Cantora One', sans-serif;
     bottom:40px;
+    color: #362524;
+}
+.navbar .nav>li>a:hover{
+    color: #362524;
+     background-color: #ffffff;
+    background-image: linear-gradient(#fef7ac, #ffffff);
+}
+.navbar .nav>li>a{
+    color: #362524;
+}
+
+.navbar .nav .active>a, .navbar .nav .active>a:hover {
+    color: #362524;
+    background-color: #ffffff;
+    background-image: linear-gradient(#fef7ac, #ffffff);
 }
 body{
     background:#F6F3F3 url("../img/body_bg.jpg") repeat scroll left top ;
     height: auto !important;
     min-height: 100%;
     min-width: 100%;
-    overflow: auto;
     width: auto !important;
     color: #362524;
     font-size: 12px;
@@ -64,25 +79,36 @@ body{
     float: left;
     font-size: 75%;
     width: 100%;
-    margin-left:200px; 
 }
-body h2, body h3 {
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 700;
-    }
 a{
-     color: #598C0B;
+     color: #362524;
     }
 #content{
     background-color: #FFFFFF;
     color: #362524;
     }
+.documentFirstHeading{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+}
 @media(min-width:780px) and (max-width:979px) { 
     #global-content{
        width:700px;
     }
+}
+@media(min-width:1200px){ 
+    .main-header,.container{
+        width:890px;
     }
+    .twocolumns{
+        width:65%;
+   }
+   .span3{
+        width:25%;
+   }
+}  
+  
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
     margin-bottom: 0;
@@ -115,8 +141,7 @@ a{
     top: 110px;
     margin-left: 10px;
 }
-.main-header{
-    width:950px;  
+.main-header{ 
     margin:auto;
 }
 #secondary-nav{
@@ -139,7 +164,6 @@ a{
 #footer-bg-color{
       background: radial-gradient(#85B30B 475px, #598C0B 950px) repeat scroll 0 0 #FF0000;
     height: 400px;
-    overflow: hidden;
     position: absolute;
     right: 0;
     width: 60%;
@@ -165,7 +189,7 @@ a{
     padding-right: 50px;
 }
 #content{
-    padding:17px;   
+    padding:17px; 
 }
 #mylogo img{
  float:left; 
@@ -192,3 +216,53 @@ a{
 div.scrollable div.items div.itemPadding {
     margin:0;
 }
+#portal-colophon a {
+    float:left;
+}
+#portal-siteactions {
+    float:right;
+}
+.footer{
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
+    font-size: 14px; 
+    text-shadow:none;
+}
+.footer a{
+    color:#000000;
+}
+.column-0{
+    text-align:right;
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+    color:#000000;
+}
+.column-1{
+    text-align:left;
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+    color:#000000;
+}
+.column-2{
+    text-align:left;
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+}
+#doormat-container .doormatColumn {
+    float: left;
+    margin: 8px;
+}
+.footer-inline{
+    border-top:white 1px solid;
+    color:#fff;
+    z-index:999;
+    position:relative;
+    margin:0 auto;
+}
+.f1{
+    float:left;
+}
+.f2{
+    float:right;
+}
+
+

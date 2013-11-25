@@ -13,7 +13,7 @@
         css:theme="div#test1"
         css:content="div#edit-bar"
         />
-
+    
 
     <replace
         css:theme=".casel1"
@@ -23,6 +23,15 @@
 
     <drop
         css:content=".lastCarousel"
+        />
+    <drop
+        css:content=".colophonWrapper"
+        />
+    <drop
+        css:content="#portal-siteactions"
+        />
+    <drop
+        css:content="#portal-footer"
         />
 
     <replace
