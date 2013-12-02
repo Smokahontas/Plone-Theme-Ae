@@ -337,6 +337,14 @@ div.scrollable div.items div.itemPadding {
     display:inline-block; 
     padding-top: 6px;
 }
+.collapse {
+    height: auto;
+}
+.collapse .option{
+    width:70%;
+    float:left;
+    clear:none;
+}
 .section-front-page .form-rows .option{
     clear:both;
     float: left;
@@ -364,7 +372,6 @@ div.scrollable div.items div.itemPadding {
     display:none   
 }
 .section-front-page .form-rows span.option{
-    width: 50%;
     float: left;
     clear: none;
 }
@@ -513,21 +520,17 @@ div.scrollable div.items div.itemPadding {
     color: #fff;
     background-image: url("../img/green_menu.png");
 }
-.section-search-property .listing-summary #search-form .form-rows {
+.section-search-property .listing-summary #search-form .form-row-location {
     clear: both;
     margin-bottom: 1em;
     overflow: hidden;
-    padding: 0 0.25em;   
-}
-.section-search-property .listing-summary #search-form .form-rows .field select,
-.listing-summary #search-form .form-rows .field input[type=text] {
-    width: 60%;
+    padding-left:22px; 
+    border-bottom: 1px solid;
 }
 .section-search-property .listing-summary #search-form form span.option {
     float: left;
-    margin-right: 30px;
     color: #598c0b;
-    padding-top:20px;
+    padding-top:5px;
 }
 .section-search-property #formfield-form-widgets-location_type .horizontal{
     display:none;
@@ -547,6 +550,248 @@ div.scrollable div.items div.itemPadding {
 .section-search-property #formfield-form-widgets-listing_type .horizontal{
     display:none;
 }
-.section-search-property .form-row-tabbed .formTabs{
-    background-color:transparent;   
+.section-search-property #content ul.formTabs{
+    background-color:transparent;
+    border:none;
 }
+.section-search-property #fieldsetlegend-0{
+    background-color: #D9E0F7;
+    color: #598c0b;
+    border-radius:7px;
+}
+.section-search-property #fieldsetlegend-1{
+    background-color: #D9E0F7;
+    color: #598c0b;
+    border-radius:7px;
+}
+.section-search-property #fieldsetlegend-2{
+    background-color: #D9E0F7;
+    color: #598c0b;
+    border-radius:7px;
+}
+.section-search-property #fieldsetlegend-3{
+    background-color: #D9E0F7;
+    color: #598c0b;
+    border-radius:7px;
+}
+.section-search-property #fieldsetlegend-4{
+    background-color: #D9E0F7;
+    color: #598c0b;
+    border-radius:7px;
+}
+.section-search-property #content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected, #content li.formTab a:hover, #content-core li.formTab a.selected, #content-core li.formTab a:hover {
+    background-color: #598c0b;
+    background-image: url("../img/green_menu.png");
+    color: #fff;
+    border-radius:7px;
+}
+.section-search-property #fieldset-0 {
+    border: 1px solid #b5b4b4;
+    padding:0px;
+}
+.section-search-property #fieldset-1 {
+    border: 1px solid #b5b4b4;
+    padding:0px;
+}
+.section-search-property #fieldset-2 {
+    border: 1px solid #b5b4b4;
+    padding:0px;
+}
+.section-search-property #fieldset-3 {
+    border: 1px solid #b5b4b4;
+    padding:0px;
+}
+.section-search-property #fieldset-4 {
+    border: 1px solid #b5b4b4;
+    padding:0px;
+}
+.section-search-property .option {
+    width:24%;
+    font-size:8px;
+    color:#598c0b;
+}
+.section-search-property .form-row-location{
+    width: 100%;
+    padding-left: 22px;
+    border: 1px solid #b5b4b4;
+    padding:0px;
+}
+.section-search-property #formfield-form-widgets-location_state{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px;
+}
+.section-search-property #formfield-form-widgets-location_county{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px;   
+}
+.section-search-property #formfield-form-widgets-location_district{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px;   
+}
+.section-search-property select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    display: inline-block;
+    height: 20px;
+    padding: 0px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #555;
+}
+.section-search-property .form-row-location label{
+    color:#598c0b;
+    font-size:11px;
+}
+.section-search-property #formfield-form-widgets-listing_type span{
+    color:#598c0b;
+    font-size:11px;
+    font-weight: bold;
+    margin-left:4px;
+}
+.section-search-property .form-row-price {
+    width: 100%;  
+}
+.section-search-property #formfield-form-widgets-location_city{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px; 
+}
+.section-search-property #formfield-form-widgets-price_min{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px; 
+}
+.section-search-property #formfield-form-widgets-price_max{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px; 
+}
+.section-search-property .listing-summary #search-form .form-row-price {
+    padding-left:22px;
+}
+.section-search-property .form-row-price label{
+    color:#598c0b;
+    font-size:11px;
+}
+.section-search-property .form-row-beds-baths label{
+    color:#598c0b;
+    font-size:11px;   
+}
+.section-search-property #formfield-form-widgets-baths{
+    margin:0;
+}
+.section-search-property .form-row-sizes label{
+    color:#598c0b;
+    font-size:11px;  
+}
+.section-search-property #formfield-form-widgets-interior_area{
+    margin:0;  
+}
+.section-search-property .form-row-other{
+    width: 100%;
+}
+.section-search-property #formfield-form-widgets-air_condition{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px; 
+}
+.section-search-property #formfield-form-widgets-pool{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px; 
+}
+.section-search-property #formfield-form-widgets-jacuzzi{
+    width: 90%;
+    float: left;
+    clear: none;
+    margin: 0px; 
+}
+.listing-summary #search-form .form-row-other{
+    padding-left:22px;
+}
+.section-search-property .form-row-other label{
+    color:#598c0b;
+    font-size:11px;
+}
+.section-search-property #form-buttons-search:hover {
+    background-position:0px;
+    color: #fff;
+    background-image: url("../img/green_menu.png");
+}
+.section-search-property #form-buttons-search{
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 15.2px;
+    padding: 2px 25px; 
+    font-weight: normal;
+    color: #598c0b;
+
+}
+.section-search-property #content {
+    height:auto;
+}
+ .section-search-property #formfield-form-widgets-location_type span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px;
+ }
+ .section-search-property #formfield-form-widgets-location_type span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px;
+ }
+ .section-search-property #formfield-form-widgets-location_type span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px;
+ }
+ .section-search-property #formfield-form-widgets-location_type span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px;
+ }
+ .section-search-property #formfield-form-widgets-location_type span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px;
+ }
+ .section-search-property #fieldset-1 span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px; 
+ }
+  .section-search-property #fieldset-2 span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px; 
+ }
+  .section-search-property #fieldset-3 span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px; 
+ }
+  .section-search-property #fieldset-4 span{
+    color:#598c0b;
+    font-size:8px;
+    font-weight: bold;
+    margin-left:10px; 
+ }
