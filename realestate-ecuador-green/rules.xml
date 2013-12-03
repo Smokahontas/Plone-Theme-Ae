@@ -38,11 +38,7 @@
         css:theme-children="div.movelogin"
         css:content="dl#portal-personaltools"
         />
-    <copy
-        attributes="class"
-        css:content="body"
-        css:theme="div#global-content"
-        />
+
     <replace theme="/html/head/title" content="/html/head/title" />
 
     <theme href="base.html" css:if-content="#visual-portal-wrapper"/>

@@ -12,9 +12,6 @@
     min-height: 157px; 
     margin:0;
 }
-#header-full a{
-    color:#000;
-}
 
 #header{
     font-family: "Istok Web","Arial Black",Gadget,sans-serif;
@@ -24,9 +21,9 @@
     width: 100%;
     display: block;
     margin:0 auto 0;
-    margin-left:58px;
+    margin-left:57px;
     position:relative;
-    bottom:35px;
+    bottom:24px;
     }
 .navbar-inner {
     background-color: #DCC844;
@@ -34,48 +31,30 @@
     border: 1px solid #514a01;
     border-bottom-color: #757575;
     border-top-color: #685f01;
+    color: #362524;
     }
 .navbar-inner {
     background-repeat: repeat-x;
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+    min-height: 40px;
     font-family: 'Cantora One', sans-serif;
     bottom:40px;
-    color: #000;
-    font-size:13px;
-    color: #000000;
-}
-.navbar-inner .container{
-    height:30px;
-}
-.navbar-inner {
-    min-height: 32px;
-    line-height:1px;
-}
-.navbar .nav .active{
-    background:red;   
-}
-.navbar .nav .active > a {
-    background:red;   
-}
-.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    width:890px;   
+    color: #362524;
 }
 .navbar .nav>li>a:hover{
     color: #362524;
-    background-color: #ffffff;
+     background-color: #ffffff;
     background-image: linear-gradient(#fef7ac, #ffffff);
 }
 .navbar .nav>li>a{
     color: #362524;
-    line-height:30px;
-    padding:0 11px;
 }
+
 .navbar .nav .active>a, .navbar .nav .active>a:hover {
     color: #362524;
     background-color: #ffffff;
     background-image: linear-gradient(#fef7ac, #ffffff);
-    min-height: 14px;
 }
 body{
     background:#F6F3F3 url("../img/body_bg.jpg") repeat scroll left top ;
@@ -90,9 +69,6 @@ body{
 .nav-tabs{
      background-color: #75AD0A;
     }
-.nav a{
-    color:#000;   
-}
 .footer{
     
     padding-top: 10px;
@@ -104,7 +80,9 @@ body{
     font-size: 75%;
     width: 100%;
 }
-
+a{
+     color: #362524;
+    }
 #content{
     background-color: #FFFFFF;
     color: #362524;
@@ -120,7 +98,7 @@ body{
     }
 }
 @media(min-width:1200px){ 
-    .main-header,.container,.navbar-inner{
+    .main-header,.container{
         width:890px;
     }
     .twocolumns{
@@ -130,19 +108,21 @@ body{
         width:25%;
    }
 }  
+  
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
-    margin-bottom: 5;
+    margin-bottom: 0;
     position: relative;
     right: 0;
     z-index: 1030;
+    margin-top:20px;
     }
 #socialbar{
     float:right;   
     }
 #socialbar img{
-    width:22px;
-    height:22px;
+    width:35px;
+    height:35px;
     float:right;  
     margin-right:7px;
     }
@@ -151,14 +131,15 @@ body{
     }
 
 .subheader{
-    font-family: "Istok Web","Arial Black",Gadget,sans-serif;
+ font-family: "Istok Web","Arial Black",Gadget,sans-serif;
     font-size: 14px;
     font-style: italic;
     color: #FEFEFE;
     position:relative;
     margin-top: 0px;
     position: absolute;
-    top: 90px;
+    top: 110px;
+    margin-left: 10px;
 }
 .main-header{ 
     margin:auto;
@@ -182,7 +163,7 @@ body{
 }
 #footer-bg-color{
       background: radial-gradient(#85B30B 475px, #598C0B 950px) repeat scroll 0 0 #FF0000;
-    height: 280px;
+    height: 400px;
     position: absolute;
     right: 0;
     width: 60%;
@@ -190,12 +171,9 @@ body{
 #footer-bg{
     background: radial-gradient(#85B30B 475px, #598C0B 950px) no-repeat scroll 0 0 #0000FF;
     border-top-left-radius: 100%;
-    height: 280px;
+    height: 400px;
     position: absolute;
     width: 40%;
-}
-#doormat-container {
-    margin:0;
 }
 #portal-footer{
     background-color :transparent;
@@ -215,10 +193,10 @@ body{
 }
 #mylogo img{
  float:left; 
- width:54px;
- height:44px;
+ width:50px;
+ height:50px;
  position: relative;
- top: 5px;
+ top: 20px;
 }
 .adtext11{
     margin-left:60px;
@@ -255,14 +233,19 @@ div.scrollable div.items div.itemPadding {
 .column-0{
     text-align:right;
     font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color:#000000;
 }
-.column-1,.column-2{
+.column-1{
     text-align:left;
     font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color:#000000;
+}
+.column-2{
+    text-align:left;
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
 }
 #doormat-container .doormatColumn {
     float: left;
@@ -278,562 +261,8 @@ div.scrollable div.items div.itemPadding {
 .f1{
     float:left;
 }
-.f1 a{
-    color:#fff;
-}
 .f2{
     float:right;
 }
-.field input[type="text"][name$=".title"], input#title {
-    width: 100%;
-    font-size:15px;
-}
-#right-column-content .portlet h4{
-    font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
-    -webkit-border-radius: 2px 2px 0 0;
-    -moz-border-radius: 2px 2px 0 0;
-    -ms-border-radius: 2px 2px 0 0;
-    -o-border-radius: 2px 2px 0 0;
-    border-radius: 2px 2px 0 0;
-    background: none repeat scroll 0 0 #598c0b;
-    color: #fff !important;
-    line-height:35px;
-    font-weight: normal;
-}
-#right-column{
-    width:33%; 
-}
-#right-column-content .portlet .odd{
-    background-color:#c1c1c1;
-    height:400px;
-    background-image:url("img/isla.jpg");
-}
-.breadcrumb {
-    background:transparent; 
-    border:0;
-    box-shadow:0;
-}
-#doormat-container a{
-    color: #000;
-}
-.portlet h4 span{
-    padding-left:7px;   
-}
-#center-column{
-    position:relative;
-    bottom:40px;
-    width:99%;
-}
-.section-front-page #center-column{
-    position:relative;
-    bottom:40px;
-    width:555px;
-}
-.portletItem{
-    background-color:#c1c1c1;
-}
-.section-front-page #formfield-form-widgets-listing_type{
-    display:inline-block; 
-    padding-top: 6px;
-}
-.collapse {
-    height: auto;
-}
-.collapse .option{
-    width:70%;
-    float:left;
-    clear:none;
-}
-.section-front-page .form-rows .option{
-    clear:both;
-    float: left;
-    background-color:transparent;
-}
-.column-0 h3{
-    font-weight: normal;
-    font-size: 16px;
-}
-.column-1 h3{
-    font-weight: normal;
-    font-size: 16px;
-}
-.column-2 h3{
-    font-weight: normal;
-    font-size: 16px;
-}
-.label{
-     background-color:transparent;
-     color:#362524;
-     font-weight: normal;
-     text-shadow:none;
-}
-.section-front-page #formfield-form-widgets-listing_type .horizontal{
-    display:none   
-}
-.section-front-page .form-rows span.option{
-    float: left;
-    clear: none;
-    width: 50%;
-}
-#right-column-content{
-    padding:0;   
-}
-.portletTopLeft{
-    margin-left:7px;   
-}
-.section-front-page input[type="radio"], input[type="checkbox"] {
-    margin: 7px 0px;   
-}
-.section-front-page #form-widgets-location_city{
-    width:247px;
-    height:25px;
-}
-.section-front-page .select-widget{
-    width:247px; 
-}
-.section-front-page #formfield-form-widgets-beds{
-    width:80%;   
-}
-.section-front-page #form-widgets-beds-min{
-    width:106px;   
-}
-.section-front-page #form-widgets-beds-max{
-    width:106px;
-    margin-left:26px;
-}
-.section-front-page span.separator{
-    display:none;
-}
-.section-front-page #formfield-form-widgets-baths{
-    width:80%;
-}
-.section-front-page #form-widgets-baths-min{
-    width:106px;   
-}
-.section-front-page #form-widgets-baths-max{
-    width:106px;
-    margin-left:26px;
-}
-.section-front-page .form-row-price{
-    width:100%;   
-}
-.section-front-page #formfield-form-widgets-price_min{
-    width: 30%;
-    float: left;
-    clear: none;
-}
-.section-front-page #formfield-form-widgets-price_max{
-    width: 30%;
-    float: left;
-    clear: none;
-    margin-left:47px;
-}
-.section-front-page .field input[type="text"] {
-    width: 106px;
-    height:25px;
-}
-.section-front-page #formfield-form-widgets-lot_size{
-    width:100%;    
-}
-.section-front-page #form-widgets-lot_size-min{
-    width: 30%;
-    width: 106px;
-    float: left;
-    clear: none;
-    height:25px;
-}
-.section-front-page #form-widgets-lot_size-max{
-    width: 30%;
-    width: 106px;
-    float: left;
-    clear: none;
-    margin-left: 30px;
-    height:25px;
-}
-.section-front-page .portletItem select,
-.section-front-page textarea, 
-.section-front-page input[type="text"], 
-.section-front-pageinput[type="password"], 
-.section-front-pageinput[type="datetime"], 
-.section-front-pageinput[type="datetime-local"],
-.section-front-pageinput[type="date"],
-.section-front-pageinput[type="month"], 
-.section-front-pageinput[type="time"], 
-.section-front-pageinput[type="week"],
-.section-front-pageinput[type="number"],
-.section-front-pageinput[type="email"],
-.section-front-pageinput[type="url"], 
-.section-front-pageinput[type="search"],
-.section-front-pageinput[type="tel"],
-.section-front-pageinput[type="color"],
-.uneditable-input {
-    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #c1c1c1;
-    padding: 3px;
-    background-image: linear-gradient(#f0f0f0, #e1e1e1);
-    -webkit-box-shadow: 0 0 1em #888888;
-    -moz-box-shadow: 0 0 1em #888888;
-    box-shadow: 0 0 1em #888888;
-    color:#000;
-}
-.section-front-page .portletItem label{
-    font-weight: normal;
-    font-size: 11px;
-}
-.section-front-page #formfield-form-widgets-interior_area{
-    width:100%   
-}
-.section-front-page #form-widgets-interior_area-min{
-    width: 30%;
-    width: 106px;
-    float: left;
-    clear: none;
-    height:25px;
-}
-.section-front-page #form-widgets-interior_area-max{
-    width: 30%;
-    width: 106px;
-    float: left;
-    clear: none;
-    height:25px;
-    margin-left: 30px;
-}
-.section-front-page #form-buttons-search{
-    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 15.2px;
-    padding: 2px 25px; 
-    font-weight: normal;
-    color: #598c0b;
-    margin-top:30px;
-    margin-bottom:30px;
-    margin-left:79px;
-}
-.section-front-page #form-buttons-search:hover {
-    background-position:0px;
-    color: #fff;
-    background-image: url("../img/green_menu.png");
-}
-.section-find-properties .listing-summary #search-form .form-row-location {
-    clear: both;
-    margin-bottom: 1em;
-    overflow: hidden;
-    padding-left:22px; 
-}
-.section-find-properties .listing-summary #search-form form span.option {
-    float: left;
-    color: #598c0b;
-    padding-top:5px;
-}
-.section-find-properties #formfield-form-widgets-location_type .horizontal{
-    display:none;
-}
-.section-find-properties #formfield-form-widgets-geographic_type .horizontal{
-    display:none;
-}
-.section-find-properties #formfield-form-widgets-view_type .horizontal{
-    display:none;
-}
-.section-find-properties #formfield-form-widgets-object_type .horizontal{
-    display:none;
-}
-.section-find-properties #formfield-form-widgets-ownership_type .horizontal{
-    display:none;
-}
-.section-find-properties #formfield-form-widgets-listing_type .horizontal{
-    display:none;
-}
-.section-find-properties #content ul.formTabs{
-    background-color:transparent;
-    border:none;
-}
-.section-find-properties #content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected, #content li.formTab a:hover, #content-core li.formTab a.selected, #content-core li.formTab a:hover {
-    background-color: #598c0b;
-    background-image: url("../img/green_menu.png");
-    color: #fff;
-    border-radius:7px;
-}
-.section-find-properties #content-views a, #content li.formTab a, #content-core li.formTab a{
-    color:#598c0b;
-    background-color: #ddd;
-    border-radius:7px;
-}
-.section-find-properties .formPanel{
-    border: 1px solid #b5b4b4;
-    padding:0px;
- }
-.section-find-properties .option {
-    width:24%;
-    font-size:8px;
-    color:#598c0b;
-}
-.section-find-properties .form-row-location{
-    width: 100%;
-    padding-left: 22px;
-    padding:0px;
-}
-.section-find-properties #formfield-form-widgets-location_state{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px;
-}
-.section-find-properties #formfield-form-widgets-location_county{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px;   
-}
-.section-find-properties #formfield-form-widgets-location_district{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px;   
-}
-.section-find-properties select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-    display: inline-block;
-    height: 20px;
-    padding: 0px;
-    margin-bottom: 5px;
-    font-size: 13px;
-    line-height: 18px;
-    color: #555;
-}
-.section-find-properties .form-row-location label{
-    color:#598c0b;
-    font-size:11px;
-}
-.section-find-properties #formfield-form-widgets-listing_type span{
-    color:#598c0b;
-    font-size:11px;
-    font-weight: bold;
-    margin-left:4px;
-}
-.section-find-properties .form-row-price {
-    width: 100%;  
-}
-.section-find-properties #formfield-form-widgets-location_city{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px; 
-}
-.section-find-properties #formfield-form-widgets-price_min{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px; 
-}
-.section-find-properties #formfield-form-widgets-price_max{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px; 
-}
-.section-find-properties .listing-summary #search-form .form-row-price {
-    padding-left:22px;
-}
-.section-find-propertiessection-find-properties .form-row-price label{
-    color:#598c0b;
-    font-size:11px;
-}
-.section-find-propertiessection-find-properties .form-row-beds-baths label{
-    color:#598c0b;
-    font-size:11px;   
-}
-.section-find-propertiessection-find-properties #formfield-form-widgets-baths{
-    margin:0;
-}
-.section-find-propertiessection-find-properties .form-row-sizes label{
-    color:#598c0b;
-    font-size:11px;  
-}
-.section-find-propertiessection-find-properties #formfield-form-widgets-interior_area{
-    margin:0;  
-}
-.section-find-propertiessection-find-properties .form-row-other{
-    width: 100%;
-}
-.section-find-propertiessection-find-properties #formfield-form-widgets-air_condition{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px; 
-}
-.section-find-properties #formfield-form-widgets-pool{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px; 
-}
-.section-find-properties #formfield-form-widgets-jacuzzi{
-    width: 90%;
-    float: left;
-    clear: none;
-    margin: 0px; 
-}
-.listing-summary #search-form .form-row-other{
-    padding-left:22px;
-}
-.section-find-properties .form-row-other label{
-    color:#598c0b;
-    font-size:11px;
-}
-.section-find-properties #form-buttons-search:hover {
-    background-position:0px;
-    color: #fff;
-    background-image: url("../img/green_menu.png");
-}
-.section-find-properties #form-buttons-search{
-    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 15.2px;
-    padding: 2px 25px; 
-    font-weight: normal;
-    color: #598c0b;
 
-}
-.section-find-propertiessection-find-properties #content {
-    height:auto;
-}
- .section-find-propertiessection-find-properties #formfield-form-widgets-location_type span{
-    color:#598c0b;
-    font-size:8px;
-    font-weight: bold;
-    margin-left:10px;
- }
- .section-find-propertiessection-find-properties #formfield-form-widgets-location_type span{
-    color:#598c0b;
-    font-size:8px;
-    font-weight: bold;
-    margin-left:10px;
- }
- .section-find-properties #formfield-form-widgets-location_type span{
-    color:#598c0b;
-    font-size:8px;
-    font-weight: bold;
-    margin-left:10px;
- }
- .section-find-properties #formfield-form-widgets-location_type span{
-    color:#598c0b;
-    font-size:8px;
-    font-weight: bold;
-    margin-left:10px;
- }
- .section-find-properties #formfield-form-widgets-location_type span{
-    color:#598c0b;
-    font-size:8px;
-    font-weight: bold;
-    margin-left:10px;
- }
- .section-find-properties .formPanel span{
-    color:#598c0b;
-    font-size:8px;
-    font-weight: bold;
-    margin-left:10px;  
- }
- .portletNews{
-    width:100%;
-    height:auto;
- }
- .portletNews h2{
-    font-size:10px;   
- }
- .portletNews .news_0{
-    font-size:8px;
-    width:20%;
-    clear:none;
-    float:left;
- }
- .portletNews .news_0 .tile{
-    font-size:12px;
-    color:#598c0b;
-    text-shadow:none;
-    font-style: italic;
- }
- .portletNews .news_1 .tile{
-    font-size:12px;
-    color:#598c0b;
-    text-shadow:none;
-    font-style: italic;
- }
- .portletNews .portletItem h2 a{
-    font-size:12px;
-    color:#598c0b;
-    text-shadow:none;
-    font-style: italic;
-    font-weight: normal;
- }
-.portletNews .portletItem{
-    font-size: 8px;
-    width: 100%;
-    clear: both;
-    overflow: auto;
-    float: none;
-    padding-bottom:12px;
-}
-.portletNews .portletItem small{
-    margin-top:10px;
-}
-.portletNews .portletItem .tile{
-    margin-left:16px;
-}
-img.image-left, img.image-right, .captioned img {
-    border: 1px solid #ddd;
-    margin: 0 15px;
-    border-radius: 5px;
-    border: 1px solid #c1c1c1;
-    padding: 3px;
-    background-image: linear-gradient(#f0f0f0, #e1e1e1);
-    -webkit-box-shadow: 0 0 1em #888888;
-    -moz-box-shadow: 0 0 1em #888888;
-    box-shadow: 0 0 1em #888888;
-}
-.portletNews .portletItem a.new_desc{
-    color: #598c0b;
-}
-.portletNews .portletItem a:hover .new_desc{
-    color: #598c0b;
-    font-weight: bold;
-}
-#right-column-content .portlet .portletNews .tile{
-    font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
-    -webkit-border-radius: 2px 2px 0 0;
-    -moz-border-radius: 2px 2px 0 0;
-    -ms-border-radius: 2px 2px 0 0;
-    -o-border-radius: 2px 2px 0 0;
-    border-radius: 2px 2px 0 0;
-    background: none repeat scroll 0 0 #598c0b;
-    color: #fff !important;
-    line-height: 35px;
-    font-weight: normal;
-}
-.portletNews #news-header .tile{
-    font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
-    -webkit-border-radius: 2px 2px 0 0;
-    -moz-border-radius: 2px 2px 0 0;
-    -ms-border-radius: 2px 2px 0 0;
-    -o-border-radius: 2px 2px 0 0;
-    border-radius: 2px 2px 0 0;
-    background: none repeat scroll 0 0 #598c0b;
-    color: #fff !important;
-    line-height: 35px;
-    font-weight: normal;
-    margin-left:14px;
-}
+
