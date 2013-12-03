@@ -182,7 +182,7 @@ body{
 }
 #footer-bg-color{
       background: radial-gradient(#85B30B 475px, #598C0B 950px) repeat scroll 0 0 #FF0000;
-    height: 400px;
+    height: 280px;
     position: absolute;
     right: 0;
     width: 60%;
@@ -190,9 +190,12 @@ body{
 #footer-bg{
     background: radial-gradient(#85B30B 475px, #598C0B 950px) no-repeat scroll 0 0 #0000FF;
     border-top-left-radius: 100%;
-    height: 400px;
+    height: 280px;
     position: absolute;
     width: 40%;
+}
+#doormat-container {
+    margin:0;
 }
 #portal-footer{
     background-color :transparent;
@@ -331,7 +334,6 @@ div.scrollable div.items div.itemPadding {
 }
 .portletItem{
     background-color:#c1c1c1;
-    line-height:2px;
 }
 .section-front-page #formfield-form-widgets-listing_type{
     display:inline-block; 
@@ -374,6 +376,7 @@ div.scrollable div.items div.itemPadding {
 .section-front-page .form-rows span.option{
     float: left;
     clear: none;
+    width: 50%;
 }
 #right-column-content{
     padding:0;   
@@ -520,121 +523,83 @@ div.scrollable div.items div.itemPadding {
     color: #fff;
     background-image: url("../img/green_menu.png");
 }
-.section-search-property .listing-summary #search-form .form-row-location {
+.section-find-properties .listing-summary #search-form .form-row-location {
     clear: both;
     margin-bottom: 1em;
     overflow: hidden;
     padding-left:22px; 
-    border-bottom: 1px solid;
 }
-.section-search-property .listing-summary #search-form form span.option {
+.section-find-properties .listing-summary #search-form form span.option {
     float: left;
     color: #598c0b;
     padding-top:5px;
 }
-.section-search-property #formfield-form-widgets-location_type .horizontal{
+.section-find-properties #formfield-form-widgets-location_type .horizontal{
     display:none;
 }
-.section-search-property #formfield-form-widgets-geographic_type .horizontal{
+.section-find-properties #formfield-form-widgets-geographic_type .horizontal{
     display:none;
 }
-.section-search-property #formfield-form-widgets-view_type .horizontal{
+.section-find-properties #formfield-form-widgets-view_type .horizontal{
     display:none;
 }
-.section-search-property #formfield-form-widgets-object_type .horizontal{
+.section-find-properties #formfield-form-widgets-object_type .horizontal{
     display:none;
 }
-.section-search-property #formfield-form-widgets-ownership_type .horizontal{
+.section-find-properties #formfield-form-widgets-ownership_type .horizontal{
     display:none;
 }
-.section-search-property #formfield-form-widgets-listing_type .horizontal{
+.section-find-properties #formfield-form-widgets-listing_type .horizontal{
     display:none;
 }
-.section-search-property #content ul.formTabs{
+.section-find-properties #content ul.formTabs{
     background-color:transparent;
     border:none;
 }
-.section-search-property #fieldsetlegend-0{
-    background-color: #D9E0F7;
-    color: #598c0b;
-    border-radius:7px;
-}
-.section-search-property #fieldsetlegend-1{
-    background-color: #D9E0F7;
-    color: #598c0b;
-    border-radius:7px;
-}
-.section-search-property #fieldsetlegend-2{
-    background-color: #D9E0F7;
-    color: #598c0b;
-    border-radius:7px;
-}
-.section-search-property #fieldsetlegend-3{
-    background-color: #D9E0F7;
-    color: #598c0b;
-    border-radius:7px;
-}
-.section-search-property #fieldsetlegend-4{
-    background-color: #D9E0F7;
-    color: #598c0b;
-    border-radius:7px;
-}
-.section-search-property #content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected, #content li.formTab a:hover, #content-core li.formTab a.selected, #content-core li.formTab a:hover {
+.section-find-properties #content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected, #content li.formTab a:hover, #content-core li.formTab a.selected, #content-core li.formTab a:hover {
     background-color: #598c0b;
     background-image: url("../img/green_menu.png");
     color: #fff;
     border-radius:7px;
 }
-.section-search-property #fieldset-0 {
+.section-find-properties #content-views a, #content li.formTab a, #content-core li.formTab a{
+    color:#598c0b;
+    background-color: #ddd;
+    border-radius:7px;
+}
+.section-find-properties .formPanel{
     border: 1px solid #b5b4b4;
     padding:0px;
-}
-.section-search-property #fieldset-1 {
-    border: 1px solid #b5b4b4;
-    padding:0px;
-}
-.section-search-property #fieldset-2 {
-    border: 1px solid #b5b4b4;
-    padding:0px;
-}
-.section-search-property #fieldset-3 {
-    border: 1px solid #b5b4b4;
-    padding:0px;
-}
-.section-search-property #fieldset-4 {
-    border: 1px solid #b5b4b4;
-    padding:0px;
-}
-.section-search-property .option {
+ }
+.section-find-properties .option {
     width:24%;
     font-size:8px;
     color:#598c0b;
 }
-.section-search-property .form-row-location{
+.section-find-properties .form-row-location{
     width: 100%;
     padding-left: 22px;
-    border: 1px solid #b5b4b4;
     padding:0px;
 }
-.section-search-property #formfield-form-widgets-location_state{
+.section-find-properties #formfield-form-widgets-location_state{
     width: 90%;
     float: left;
     clear: none;
     margin: 0px;
 }
-.section-search-property #formfield-form-widgets-location_county{
+.section-find-properties #formfield-form-widgets-location_county{
     width: 90%;
     float: left;
     clear: none;
     margin: 0px;   
 }
-.section-search-property #formfield-form-widgets-location_district{
+.section-find-properties #formfield-form-widgets-location_district{
     width: 90%;
     float: left;
     clear: none;
     margin: 0px;   
 }
-.section-search-property select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+.section-find-properties select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
     display: inline-block;
     height: 20px;
     padding: 0px;
@@ -643,74 +608,74 @@ div.scrollable div.items div.itemPadding {
     line-height: 18px;
     color: #555;
 }
-.section-search-property .form-row-location label{
+.section-find-properties .form-row-location label{
     color:#598c0b;
     font-size:11px;
 }
-.section-search-property #formfield-form-widgets-listing_type span{
+.section-find-properties #formfield-form-widgets-listing_type span{
     color:#598c0b;
     font-size:11px;
     font-weight: bold;
     margin-left:4px;
 }
-.section-search-property .form-row-price {
+.section-find-properties .form-row-price {
     width: 100%;  
 }
-.section-search-property #formfield-form-widgets-location_city{
+.section-find-properties #formfield-form-widgets-location_city{
     width: 90%;
     float: left;
     clear: none;
     margin: 0px; 
 }
-.section-search-property #formfield-form-widgets-price_min{
+.section-find-properties #formfield-form-widgets-price_min{
     width: 90%;
     float: left;
     clear: none;
     margin: 0px; 
 }
-.section-search-property #formfield-form-widgets-price_max{
+.section-find-properties #formfield-form-widgets-price_max{
     width: 90%;
     float: left;
     clear: none;
     margin: 0px; 
 }
-.section-search-property .listing-summary #search-form .form-row-price {
+.section-find-properties .listing-summary #search-form .form-row-price {
     padding-left:22px;
 }
-.section-search-property .form-row-price label{
+.section-find-propertiessection-find-properties .form-row-price label{
     color:#598c0b;
     font-size:11px;
 }
-.section-search-property .form-row-beds-baths label{
+.section-find-propertiessection-find-properties .form-row-beds-baths label{
     color:#598c0b;
     font-size:11px;   
 }
-.section-search-property #formfield-form-widgets-baths{
+.section-find-propertiessection-find-properties #formfield-form-widgets-baths{
     margin:0;
 }
-.section-search-property .form-row-sizes label{
+.section-find-propertiessection-find-properties .form-row-sizes label{
     color:#598c0b;
     font-size:11px;  
 }
-.section-search-property #formfield-form-widgets-interior_area{
+.section-find-propertiessection-find-properties #formfield-form-widgets-interior_area{
     margin:0;  
 }
-.section-search-property .form-row-other{
+.section-find-propertiessection-find-properties .form-row-other{
     width: 100%;
 }
-.section-search-property #formfield-form-widgets-air_condition{
+.section-find-propertiessection-find-properties #formfield-form-widgets-air_condition{
     width: 90%;
     float: left;
     clear: none;
     margin: 0px; 
 }
-.section-search-property #formfield-form-widgets-pool{
+.section-find-properties #formfield-form-widgets-pool{
     width: 90%;
     float: left;
     clear: none;
     margin: 0px; 
 }
-.section-search-property #formfield-form-widgets-jacuzzi{
+.section-find-properties #formfield-form-widgets-jacuzzi{
     width: 90%;
     float: left;
     clear: none;
@@ -719,16 +684,16 @@ div.scrollable div.items div.itemPadding {
 .listing-summary #search-form .form-row-other{
     padding-left:22px;
 }
-.section-search-property .form-row-other label{
+.section-find-properties .form-row-other label{
     color:#598c0b;
     font-size:11px;
 }
-.section-search-property #form-buttons-search:hover {
+.section-find-properties #form-buttons-search:hover {
     background-position:0px;
     color: #fff;
     background-image: url("../img/green_menu.png");
 }
-.section-search-property #form-buttons-search{
+.section-find-properties #form-buttons-search{
     font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -738,60 +703,137 @@ div.scrollable div.items div.itemPadding {
     color: #598c0b;
 
 }
-.section-search-property #content {
+.section-find-propertiessection-find-properties #content {
     height:auto;
 }
- .section-search-property #formfield-form-widgets-location_type span{
+ .section-find-propertiessection-find-properties #formfield-form-widgets-location_type span{
     color:#598c0b;
     font-size:8px;
     font-weight: bold;
     margin-left:10px;
  }
- .section-search-property #formfield-form-widgets-location_type span{
+ .section-find-propertiessection-find-properties #formfield-form-widgets-location_type span{
     color:#598c0b;
     font-size:8px;
     font-weight: bold;
     margin-left:10px;
  }
- .section-search-property #formfield-form-widgets-location_type span{
+ .section-find-properties #formfield-form-widgets-location_type span{
     color:#598c0b;
     font-size:8px;
     font-weight: bold;
     margin-left:10px;
  }
- .section-search-property #formfield-form-widgets-location_type span{
+ .section-find-properties #formfield-form-widgets-location_type span{
     color:#598c0b;
     font-size:8px;
     font-weight: bold;
     margin-left:10px;
  }
- .section-search-property #formfield-form-widgets-location_type span{
+ .section-find-properties #formfield-form-widgets-location_type span{
     color:#598c0b;
     font-size:8px;
     font-weight: bold;
     margin-left:10px;
  }
- .section-search-property #fieldset-1 span{
+ .section-find-properties .formPanel span{
     color:#598c0b;
     font-size:8px;
     font-weight: bold;
-    margin-left:10px; 
+    margin-left:10px;  
  }
-  .section-search-property #fieldset-2 span{
-    color:#598c0b;
+ .portletNews{
+    width:100%;
+    height:auto;
+ }
+ .portletNews h2{
+    font-size:10px;   
+ }
+ .portletNews .news_0{
     font-size:8px;
-    font-weight: bold;
-    margin-left:10px; 
+    width:20%;
+    clear:none;
+    float:left;
  }
-  .section-search-property #fieldset-3 span{
+ .portletNews .news_0 .tile{
+    font-size:12px;
     color:#598c0b;
-    font-size:8px;
-    font-weight: bold;
-    margin-left:10px; 
+    text-shadow:none;
+    font-style: italic;
  }
-  .section-search-property #fieldset-4 span{
+ .portletNews .news_1 .tile{
+    font-size:12px;
     color:#598c0b;
-    font-size:8px;
-    font-weight: bold;
-    margin-left:10px; 
+    text-shadow:none;
+    font-style: italic;
  }
+ .portletNews .portletItem h2 a{
+    font-size:12px;
+    color:#598c0b;
+    text-shadow:none;
+    font-style: italic;
+    font-weight: normal;
+ }
+.portletNews .portletItem{
+    font-size: 8px;
+    width: 100%;
+    clear: both;
+    overflow: auto;
+    float: none;
+    padding-bottom:12px;
+}
+.portletNews .portletItem small{
+    margin-top:10px;
+}
+.portletNews .portletItem .tile{
+    margin-left:16px;
+}
+img.image-left, img.image-right, .captioned img {
+    border: 1px solid #ddd;
+    margin: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    padding: 3px;
+    background-image: linear-gradient(#f0f0f0, #e1e1e1);
+    -webkit-box-shadow: 0 0 1em #888888;
+    -moz-box-shadow: 0 0 1em #888888;
+    box-shadow: 0 0 1em #888888;
+}
+.portletNews .portletItem a.new_desc{
+    color: #598c0b;
+}
+.portletNews .portletItem a:hover .new_desc{
+    color: #598c0b;
+    font-weight: bold;
+}
+#right-column-content .portlet .portletNews .tile{
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -o-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    background: none repeat scroll 0 0 #598c0b;
+    color: #fff !important;
+    line-height: 35px;
+    font-weight: normal;
+}
+.portletNews #news-header .tile{
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -o-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    background: none repeat scroll 0 0 #598c0b;
+    color: #fff !important;
+    line-height: 35px;
+    font-weight: normal;
+    margin-left:14px;
+}
