@@ -5,6 +5,13 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
+    
+
+    <replace
+        css:theme="div.main-header"
+        css:content="div.smart-header"
+        />
+
     <replace
         css:theme="#mylogo a"
         css:content="#portal-logo"
@@ -13,23 +20,18 @@
         css:theme="div#test1"
         css:content="div#edit-bar"
         />
-    
-
     <replace
         css:theme=".casel1"
         css:content=".lastCarousel"
         method="raw"
         />
-
+    <drop
+        css:content="#portletBelowContentManager"
+        />
     <drop
         css:content=".lastCarousel"
         />
-    <drop
-        css:content=".colophonWrapper"
-        />
-    <drop
-        css:content="#portal-siteactions"
-        />
+
     <drop
         css:content="#portal-footer"
         />
@@ -38,7 +40,11 @@
         css:theme-children="div.movelogin"
         css:content="dl#portal-personaltools"
         />
-
+    <copy
+        attributes="class"
+        css:content="body"
+        css:theme="div#global-content"
+        />
     <replace theme="/html/head/title" content="/html/head/title" />
 
     <theme href="base.html" css:if-content="#visual-portal-wrapper"/>
