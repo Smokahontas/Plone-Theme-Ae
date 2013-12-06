@@ -205,7 +205,7 @@ body{
     float:right;
 }
 #footer-bg-color{
-      background: radial-gradient(#85B30B 475px, #598C0B 950px) repeat scroll 0 0 #FF0000;
+    background: radial-gradient(#85B30B 475px, #598C0B 950px) repeat scroll 0 0 #FF0000;
     height: 280px;
     position: absolute;
     right: 0;
@@ -252,6 +252,29 @@ body{
 }
 .movelogin{
     float:right;
+    position:relative;
+    right:10px;
+    bottom:12px;
+    background-color:transparent;
+    border-radius:0;
+}
+.movelogin a{
+    color: #598c0b;
+    background-color:transparent;
+    border-radius:0;
+}
+.movelogin2{
+    float:right;
+    position:relative;
+    right:10px;
+    bottom:12px;
+    background-color:transparent;
+    border-radius:0;
+}
+.movelogin2 a{
+    color: #598c0b;
+    background-color:transparent;
+    border-radius:0;
 }
 .logo-bottom{
     float:right;
@@ -432,34 +455,34 @@ div.scrollable div.items div.itemPadding {
     margin: 7px 0px;   
 }
 .section-front-page #form-widgets-location_city{
-    width:247px;
-    height:25px;
+    width: 238px;
+    height: 16px;
 }
 .section-front-page .select-widget{
     width:247px; 
 }
 .section-front-page #formfield-form-widgets-beds{
-    width:80%;   
+    width:100%;   
 }
 .section-front-page #form-widgets-beds-min{
-    width:106px;   
+    width:106px;
 }
 .section-front-page #form-widgets-beds-max{
     width:106px;
-    margin-left:26px;
+    margin-left:25px;
 }
 .section-front-page span.separator{
     display:none;
 }
 .section-front-page #formfield-form-widgets-baths{
-    width:80%;
+    width:100%;
 }
 .section-front-page #form-widgets-baths-min{
-    width:106px;   
+    width:106px;
 }
 .section-front-page #form-widgets-baths-max{
     width:106px;
-    margin-left:26px;
+    margin-left:25px;
 }
 .section-front-page .form-row-price{
     width:100%;   
@@ -476,8 +499,8 @@ div.scrollable div.items div.itemPadding {
     margin-left:47px;
 }
 .section-front-page .field input[type="text"] {
-    width: 106px;
-    height:25px;
+    width: 98px;
+    height: 16px;
 }
 .section-front-page #formfield-form-widgets-lot_size{
     width:100%;    
@@ -690,7 +713,7 @@ div.scrollable div.items div.itemPadding {
     margin-left:4px;
 }
 .listing-summary #search-form .form-row-price #formfield-form-widgets-location_city{
-    padding: 0 0 0 22px;
+    padding: 0 0 0 19px;
 }
 .listing-summary .form-row-price {
     width: 100%;  
@@ -946,7 +969,7 @@ img.image-left, img.image-right, .captioned img {
     text-decoration: none;
 }
 #recent-listings .tileItem.visualIEFloatFix{
-    border-top:2px dotted #ddd;   
+    border-top:2px dotted #c1c1c1;   
 }
 #recent-listings #content .listing-summary figure a {
     border-color:#598c0b;
@@ -991,7 +1014,7 @@ img.image-left, img.image-right, .captioned img {
 .portletAgentInformation .portletItem .contact_details {
     margin-top: 1em;
     word-wrap: break-word;
-    padding: 10px;
+    padding-left: 50px;
 }
 #contact_details dd{
     float: none;
@@ -1020,10 +1043,40 @@ img.image-left, img.image-right, .captioned img {
     font-style: italic;
     color:#598c0b;
     font-weight:normal;
+    padding-left: 50px;
+}
+.portletAgentInformation .portletItem .agent_title{
+    padding-left: 50px;
+    padding-top: 0px;
+}
+.portletAgentInformation .portletItem .agency_name{
+    padding-left: 50px;
+    padding-top: 0px;
+}
+.portletAgentInformation{
+    background-color:#c1c1c1;
 }
 .portletAgentInformation .portletItem figure img {
-    padding-left: 15px;
-    width:90%;
+    padding-left: 43px;
+    width:70%;
+    padding-bottom:15px;
+    padding-top:16px;
+}
+.agent_avatar {
+    width:100%;
+}
+.portletItem .agency_logo{
+    display:none;   
+}
+.agency-logo-wrapper .agency_logo{
+    width:70%;
+    padding-left: 43px;
+    background-color: #c1c1c1;
+    padding-bottom:28px;
+    padding-top:25px;
+}
+figcaption {
+    display: none;
 }
 .portletAgentInformation .portletItem .agent_avatar {
     padding-top:10px;    
@@ -1053,5 +1106,77 @@ div.row {
     border:0;
 }
 .listing-summary #search-form #formfield-form-widgets-baths{
-    margin:0;   
+    margin:0;
+    margin-left:2px;
+}
+.listing-summary #search-form .form-row-beds-baths{
+    margin:0;
+    margin-left:2px;   
+}
+.listing-summary #search-form .form-row-sizes {
+    margin:0;
+    margin-left:2px;   
+}
+.portletAgentContact .rowlike{
+    background-color: #c1c1c1;
+    position: relative;
+}
+.rowlike{
+    padding-top:10px;   
+}
+.row .field {
+    margin-left: 16px;
+}
+dl{
+    margin-bottom:0;   
+}
+#listing-info{
+    width:35%;
+    float: right;
+}
+.listing #listing-images .galleria-container {
+    width:100% !important;
+}
+.listing #listing-images {
+    float: left;
+    margin-bottom: 1.5em;
+    margin-right: 0;
+    width: 61%;
+}
+#listing-info h2{
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;  
+    font-weight: normal;
+    color:#444;
+}
+#parent-fieldname-title{
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: normal;
+    color:#598c0b;
+}
+#parent-fieldname-title h1.documentFirstHeading {
+    font-style: normal;
+}
+.listing .documentFirstHeading{
+    font-size: 14px;
+    font-weight: 700;
+    font-weight: normal;
+    color:#598c0b;
+    border-bottom:2px dotted #ddd;
+    padding-bottom:8px;
+}
+.footer{
+    padding:0;   
+}
+.carousel .next {
+    left: 53%;
+}
+#content div.documentByLine {
+    display: none;
+}
+.label:after {
+    content: '\A';
+    white-space: pre;
 }

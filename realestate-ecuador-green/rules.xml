@@ -40,6 +40,10 @@
         css:theme-children="div.movelogin"
         css:content="dl#portal-personaltools"
         />
+    <replace
+        css:theme-children="div.movelogin2"
+        css:content="ul#portal-personaltools"
+        />
     <copy
         attributes="class"
         css:content="body"
