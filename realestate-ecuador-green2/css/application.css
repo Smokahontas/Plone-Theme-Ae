@@ -65,6 +65,15 @@
     font-size:13px;
     color: #000000;
 }
+#portal-globalnav li a {
+    border:0 none transparent; 
+}
+div.navi a{
+    border:0 none transparent;   
+}
+ul{
+    border:0 none transparent;    
+}
 .nav-tabs{
     border:0 none;   
 }
@@ -72,7 +81,7 @@
     height:30px;
 }
 .navbar-inner {
-    min-height: 32px;
+    min-height: 20px;
     line-height:1px;
 }
 .navbar .nav .active{
@@ -80,9 +89,6 @@
 }
 .navbar .nav .active > a {
     background:red;   
-}
-.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-    width:890px;   
 }
 .navbar .nav>li>a:hover{
     color: #362524;
@@ -137,13 +143,8 @@ body{
     font-style: italic;
     font-weight: 700;
 }
-@media(min-width:780px) and (max-width:979px) { 
-    #global-content{
-       width:700px;
-    }
-}
 @media(min-width:1200px){ 
-    ,.container,.navbar-inner{
+    .container,.navbar-inner{
         width:890px;
     }
     .twocolumns{
@@ -152,10 +153,39 @@ body{
    .span3{
         width:25%;
    }
+   .section-front-page .form-rows span.option {
+        width:50%;   
+   }
 }  
+@media(min-width:980px) and (max-width:1199px) { 
+    .container,.navbar-inner{
+        width:700px;
+    }
+    .section-front-page .form-rows span.option {
+        width:100%;   
+   }
+}
+@media(min-width:780px) and (max-width:979px) {
+    .navbar-inner{
+     margin-bottom:18px;
+    }
+}
+@media(min-width:500px) and (max-width:779px) {
+    .container,.navbar-inner{
+        width:480px;
+    }
+    .section-front-page .form-rows span.option {
+        width:100% ;
+    }
+    .navbar-inner{
+        width:480px;
+        margin-bottom: 24px;
+        margin-left: 14px;
+    }
+}
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
-    margin-bottom: 5;
+    margin-bottom: 5px;
     position: relative;
     right: 0;
     z-index: 1030;
@@ -380,8 +410,8 @@ div.scrollable div.items div.itemPadding {
 }
 .breadcrumb {
     background:transparent; 
-    border:0;
-    box-shadow:0;
+    border:0 none transparent;
+    box-shadow:none;
 }
 #doormat-container a{
     color: #000;
@@ -443,7 +473,7 @@ div.scrollable div.items div.itemPadding {
 .section-front-page .form-rows span.option{
     float: left;
     clear: none;
-    width: 50%;
+
 }
 #right-column-content{
     padding:0;   
@@ -455,20 +485,20 @@ div.scrollable div.items div.itemPadding {
     margin: 7px 0px;   
 }
 .section-front-page #form-widgets-location_city{
-    width: 238px;
+    width: 85%;
     height: 16px;
 }
 .section-front-page .select-widget{
-    width:247px; 
+    width:88%; 
 }
 .section-front-page #formfield-form-widgets-beds{
     width:100%;   
 }
 .section-front-page #form-widgets-beds-min{
-    width:106px;
+    width:37%;
 }
 .section-front-page #form-widgets-beds-max{
-    width:106px;
+    width: 37%;
     margin-left:25px;
 }
 .section-front-page span.separator{
@@ -478,10 +508,10 @@ div.scrollable div.items div.itemPadding {
     width:100%;
 }
 .section-front-page #form-widgets-baths-min{
-    width:106px;
+    width:37%;
 }
 .section-front-page #form-widgets-baths-max{
-    width:106px;
+    width:37%;
     margin-left:25px;
 }
 .section-front-page .form-row-price{
@@ -499,22 +529,20 @@ div.scrollable div.items div.itemPadding {
     margin-left:47px;
 }
 .section-front-page .field input[type="text"] {
-    width: 98px;
+    width: 115%;
     height: 16px;
 }
 .section-front-page #formfield-form-widgets-lot_size{
     width:100%;    
 }
 .section-front-page #form-widgets-lot_size-min{
-    width: 30%;
-    width: 106px;
+    width: 37%;
     float: left;
     clear: none;
     height:25px;
 }
 .section-front-page #form-widgets-lot_size-max{
-    width: 30%;
-    width: 106px;
+    width: 37%;
     float: left;
     clear: none;
     margin-left: 30px;
@@ -560,15 +588,13 @@ div.scrollable div.items div.itemPadding {
     width:100%   
 }
 .section-front-page #form-widgets-interior_area-min{
-    width: 30%;
-    width: 106px;
+    width: 37%;
     float: left;
     clear: none;
     height:25px;
 }
 .section-front-page #form-widgets-interior_area-max{
-    width: 30%;
-    width: 106px;
+    width: 37%;
     float: left;
     clear: none;
     height:25px;
@@ -1171,7 +1197,12 @@ dl{
     padding:0;   
 }
 .carousel .next {
-    left: 53%;
+    left: 100%;
+    width: 5%;
+}
+.carousel .prev {
+    left: -5%;
+    width: 5%;
 }
 #content div.documentByLine {
     display: none;
@@ -1179,4 +1210,8 @@ dl{
 .label:after {
     content: '\A';
     white-space: pre;
+}
+input[type="submit"] {
+    margin-bottom:10px;
+    margin-left:95px;
 }
