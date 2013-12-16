@@ -6,6 +6,15 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
     
+    <replace
+        css:theme="div.language-switcher2"
+        css:content="ul#portal-languageselector"
+    />
+
+    <replace
+        css:theme="div.language-switcher"
+        css:content="ul#portal-languageselector"
+        />
 
     <replace
         css:theme="div.main-header"

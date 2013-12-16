@@ -11,6 +11,24 @@
     display: block;
     min-height: 157px; 
     margin:0;
+    position:relative;
+}
+.section-front-page #header-full{
+    background:none;   
+}
+.section-front-page .background-wrapper {
+    position: absolute;
+    display: block;
+    min-height: 157px;
+    height: auto !important;
+    height: 157px;
+    width: 100%;
+    height: 70% !important;
+    background-color: #598C0B;
+    background-image: radial-gradient(#85B30B 475px, #598C0B 950px);
+    font-family: "Istok Web","Arial Black",Gadget,sans-serif;
+    font-weight: 400;
+    color: #FEFDFD;
 }
 .subheader{
     display:none;   
@@ -35,6 +53,22 @@
 .smart-header h1{
     margin-left:10px;  
     line-height:90px;
+}
+.language-switcher{
+    display:none;
+}
+#portal-languageselector{
+    position: absolute;
+    float: right;
+    right: 17%;
+    color: #362524;
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif; 
+    box-shadow: 0 0 1em #888888;
+    padding: 2px 18px;
+} 
+#portal-languageselector a{
+    color: #362524;
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif; 
 }
 #header{
     font-family: "Istok Web","Arial Black",Gadget,sans-serif;
@@ -67,6 +101,9 @@
 }
 #portal-globalnav li a {
     border:0 none transparent; 
+}
+body{
+    padding:0;   
 }
 div.navi a{
     border:0 none transparent;   
@@ -143,12 +180,18 @@ body{
     font-style: italic;
     font-weight: 700;
 }
+.navbar .btn-navbar{
+    margin-top:0;
+    }
 @media(min-width:1200px){ 
-    .container,.navbar-inner{
+    .container,.navbar-inner,
+    .navbar-inner .container,
+    .navbar-fixed-top .container, .navbar-fixed-bottom .container,
+    .nocolumns{
         width:890px;
     }
     .twocolumns{
-        width:65%;
+        width:60%;
    }
    .span3{
         width:25%;
@@ -156,31 +199,403 @@ body{
    .section-front-page .form-rows span.option {
         width:50%;   
    }
+   #right-column{
+        width:33%; 
+    }
+    .section-front-page #formfield-form-widgets-price_max{
+         margin-left: 47px;  
+    }
+    .navbar-fixed-top .navbar-inner, 
+    .navbar-fixed-bottom .navbar-inner{
+        padding:0;
+    }
+    .listing-summary #search-form form span.option {
+        float: left;
+        color: #598c0b;
+        height: 20px;
+        width: 23%;
+    }
+    #footer-bg {
+        height:100%;
+    }
+    #footer-bg-color {
+        height:100%;
+    }
+    .portletAgentInformation .portletItem .contact_details ,
+    .portletAgentInformation h3 ,
+    .portletAgentInformation .portletItem .agency_name{
+        padding-left: 17%;
+    }
+    #footer-bg {
+        border-top-left-radius: 100%;
+    }
 }  
 @media(min-width:980px) and (max-width:1199px) { 
-    .container,.navbar-inner{
-        width:700px;
+    .container,.navbar-inner,
+    .navbar-inner .container,
+    .navbar-fixed-top .container, .navbar-fixed-bottom .container,
+    .nocolumns{
+        width:920px;
     }
     .section-front-page .form-rows span.option {
         width:100%;   
-   }
-}
-@media(min-width:780px) and (max-width:979px) {
-    .navbar-inner{
-     margin-bottom:18px;
+    }
+    #content ul.formTabs {
+        width:100%; 
+    }
+    .twocolumns{
+        width:60%;
+    }
+    #right-column{
+        width:33%; 
+    }
+    .section-front-page #formfield-form-widgets-price_max{
+         margin-left: 47px;  
+    }
+    .navbar-fixed-top .navbar-inner, 
+    .navbar-fixed-bottom .navbar-inner{
+        padding:0;
+    }
+    #footer-bg {
+        height:100%;
+    }
+    #footer-bg-color {
+        height:100%;
+    }
+    .portletAgentInformation .portletItem .contact_details,
+    .portletAgentInformation h3 ,
+    .portletAgentInformation .portletItem .agency_name{
+        padding-left: 8%;
+    }
+    #footer-bg {
+        border-top-left-radius: 100%;
     }
 }
-@media(min-width:500px) and (max-width:779px) {
-    .container,.navbar-inner{
-        width:480px;
+@media(min-width:768px) and (max-width:979px) {
+    .container,.navbar-inner,
+    .navbar-inner .container,
+    .navbar-fixed-top .container, .navbar-fixed-bottom .container,
+    .nocolumns{
+        width:750px;
+    }
+    .navbar-inner{
+        margin-bottom:18px;
+    }
+    .navbar-fixed-top .navbar-inner, 
+    .navbar-fixed-bottom .navbar-inner{
+        padding:0;
+    }
+    .twocolumns{
+        width:60%;
+   }
+   #right-column{
+        width:33%; 
     }
     .section-front-page .form-rows span.option {
         width:100% ;
     }
-    .navbar-inner{
-        width:480px;
+    .section-front-page #formfield-form-widgets-price_max{
+         margin-left: 47px;  
+    }
+    .listing-summary #search-form form span.option {
+        width: 34%;
+    }
+    #footer-bg {
+        height:100%;
+        border-top-left-radius: 100%;
+    }
+    #footer-bg-color {
+        height:100%;
+    }
+    .portletAgentInformation .portletItem .contact_details,
+    .portletAgentInformation h3 ,
+    .portletAgentInformation .portletItem .agency_name{
+        padding-left: 8%;
+    }
+    #topnav-collapse{
+       background-color:#70A51E;
+        border: 1px solid #FFFDD6;
+        border-bottom-color: #757575;
+        border-top-color: #685f01;
+        color:#fff;
+        font-weight:normal;
+    }
+    .navbar .nav .active,.navbar .nav .active:hover {
+       background-color: #FFFAA2;
+        border: 1px dotted #598c0b;
+        border-bottom-color: #598c0b;
+        border-top-color: #598c0b;
+        color:#fff;
+        font-weight:normal;
+    }
+    .nav-collapse .nav>li>a{
+      color:#fff;
+      background-color: #70A51E;
+      font-weight:normal;
+    }
+    .nav-collapse .nav>li>a:hover {
+      color:#000;
+      background-color: #70A51E;
+      font-weight:normal;  
+    }
+    .navbar-search {
+        display:none;
+    }
+    .navbar .nav .active>a,.navbar .nav .active>a:hover{
+        background-color: #FFFAA2;
+        border-bottom-color: #598c0b;
+        border-top-color: #598c0b;
+        color:#000; 
+        font-weight:normal;
+    }
+    .nav-collapse .nav>li{
+        border-top: 1px dotted #598c0b; 
+    }
+    .footer-bg{
+        background: radial-gradient(#85B30B 475px, #598C0B 950px) no-repeat scroll 0 0 #0000FF;
+        position: absolute;
+        width: 40%;
+    }
+}
+@media(max-width:769px) {
+    .container,.navbar-inner,
+    .navbar-inner .container,
+    .navbar-fixed-top .container, .navbar-fixed-bottom .container,
+    .nocolumns{
+        width:560px;
+    }
+    .section-front-page .form-rows span.option {
+        width:100% ;
+    }
+    .twocolumns{
+        width:100%;   
+    }
+    .section-front-page #form-widgets-location_city {
+        width: 80%;
+        height: 16px;
+    }
+    .section-front-page .select-widget {
+        width: 82%;
+    }
+    .navbar-fixed-top .navbar-inner, 
+    .navbar-fixed-bottom .navbar-inner{
+        width:560px;
         margin-bottom: 24px;
-        margin-left: 14px;
+        padding:0;
+        margin-left:20px;
+    }
+    .carouselWrapper{
+        display:none;
+    }
+    #right-column{
+        width:100%;
+    }
+    .section-front-page #formfield-form-widgets-price_max{
+         margin-left: 64px;  
+    }
+    #portal-colophon{
+        position: relative;
+        left: 23%;
+    }
+    #portal-siteactions{
+        position: relative;
+        right: 27%;
+        bottom: 15px;
+        margin-top: 0;
+    }
+    .agency-logo-wrapper .agency_logo {
+        width: 100%;
+    }
+    .listing-summary #search-form .form-row-other #formfield-form-widgets-air_condition{
+        float: left;
+        width: 100%;  
+    }
+    .listing-summary #search-form .form-row-other #formfield-form-widgets-pool{
+        float: left;
+         width: 50%;
+        padding-left: 5%; 
+    }
+    .listing-summary #search-form .form-row-other #formfield-form-widgets-jacuzzi{
+        float: left;
+         width: 50%;
+        padding-left: 5%; 
+    }
+    .listing-summary #search-form form span.option {
+        float: left;
+        color: #598c0b;
+        height: 20px;
+        width: 100%;
+    }
+    .listing-summary #search-form form span.option {
+        float: left;
+        color: #598c0b;
+        height: 20px;
+        width: 100%;
+    }
+    #footer-bg {
+        height:100%;
+        border-top-left-radius: 40%;
+    }
+    #footer-bg-color {
+        height:100%;
+    }
+     #topnav-collapse{
+       background-color:#70A51E;
+        border: 1px solid #FFFDD6;
+        border-bottom-color: #757575;
+        border-top-color: #685f01;
+        color:#fff;
+        font-weight:normal;
+    }
+    .navbar .nav .active,.navbar .nav .active:hover {
+       background-color: #FFFAA2;
+        border: 1px dotted #598c0b;
+        border-bottom-color: #598c0b;
+        border-top-color: #598c0b;
+        color:#fff;
+        font-weight:normal;
+    }
+    .nav-collapse .nav>li>a{
+      color:#fff;
+      background-color: #70A51E;
+      font-weight:normal;
+    }
+    .nav-collapse .nav>li>a:hover {
+      color:#000;
+      background-color: #70A51E;
+      font-weight:normal;  
+    }
+    .navbar-search {
+        display:none;
+    }
+    .navbar .nav .active>a,.navbar .nav .active>a:hover{
+        background-color: #FFFAA2;
+        border-bottom-color: #598c0b;
+        border-top-color: #598c0b;
+        color:#000; 
+        font-weight:normal;
+    }
+}
+@media(max-width:648px) {
+    .container,.navbar-inner,
+    .navbar-inner .container,
+    .navbar-fixed-top .container, .navbar-fixed-bottom .container,
+    .nocolumns{
+        width:450px;
+    }
+    .navbar-fixed-top .navbar-inner, 
+    .navbar-fixed-bottom .navbar-inner{
+        width:450px;
+        margin-bottom: 24px;
+        padding:0;
+        margin-left:20px;
+    }
+     #topnav-collapse{
+       background-color:#70A51E;
+        border: 1px solid #FFFDD6;
+        border-bottom-color: #757575;
+        border-top-color: #685f01;
+        color:#fff;
+        font-weight:normal;
+    }
+    .navbar .nav .active,.navbar .nav .active:hover {
+       background-color: #FFFAA2;
+        border: 1px dotted #598c0b;
+        border-bottom-color: #598c0b;
+        border-top-color: #598c0b;
+        color:#fff;
+        font-weight:normal;
+    }
+    .nav-collapse .nav>li>a{
+      color:#fff;
+      background-color: #70A51E;
+      font-weight:normal;
+    }
+    .nav-collapse .nav>li>a:hover {
+      color:#000;
+      background-color: #70A51E;
+      font-weight:normal;  
+    }
+    .navbar-search {
+        display:none;
+    }
+    .navbar .nav .active>a,.navbar .nav .active>a:hover{
+        background-color: #FFFAA2;
+        border-bottom-color: #598c0b;
+        border-top-color: #598c0b;
+        color:#000; 
+        font-weight:normal;
+    }
+    #portal-siteactions {
+        right:22%;
+        padding-right:0;
+    }
+    #portal-colophon{
+        position: relative;
+        left: 18%;
+    }
+}
+@media(max-width:500px) {
+    .container,.navbar-inner,
+    .navbar-inner .container,
+    .navbar-fixed-top .container, .navbar-fixed-bottom .container,
+    .nocolumns{
+        width:370px;
+    }
+    .navbar-fixed-top .navbar-inner, 
+    .navbar-fixed-bottom .navbar-inner{
+        width:370px;
+        margin-bottom: 24px;
+        padding:0;
+        margin-left:20px;
+    }
+     #topnav-collapse{
+       background-color:#70A51E;
+        border: 1px solid #FFFDD6;
+        border-bottom-color: #757575;
+        border-top-color: #685f01;
+        color:#fff;
+        font-weight:normal;
+    }
+    .navbar .nav .active,.navbar .nav .active:hover {
+       background-color: #FFFAA2;
+        border: 1px dotted #598c0b;
+        border-bottom-color: #598c0b;
+        border-top-color: #598c0b;
+        color:#fff;
+        font-weight:normal;
+    }
+    .nav-collapse .nav>li>a{
+      color:#fff;
+      background-color: #70A51E;
+      font-weight:normal;
+    }
+    .nav-collapse .nav>li>a:hover {
+      color:#000;
+      background-color: #70A51E;
+      font-weight:normal;  
+    }
+    .navbar-search {
+        display:none;
+    }
+    .navbar .nav .active>a,.navbar .nav .active>a:hover{
+        background-color: #FFFAA2;
+        border-bottom-color: #598c0b;
+        border-top-color: #598c0b;
+        color:#000; 
+        font-weight:normal;
+    }
+    #portal-logo{
+        display:none;   
+    }
+    #portal-siteactions {
+        position: relative;
+        padding-right: 0;
+        right:13%;
+    }
+    #portal-colophon{
+        position: relative;
+        left: 12%;
     }
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -236,17 +651,21 @@ body{
 }
 #footer-bg-color{
     background: radial-gradient(#85B30B 475px, #598C0B 950px) repeat scroll 0 0 #FF0000;
-    height: 280px;
     position: absolute;
     right: 0;
     width: 60%;
 }
 #footer-bg{
     background: radial-gradient(#85B30B 475px, #598C0B 950px) no-repeat scroll 0 0 #0000FF;
-    border-top-left-radius: 100%;
-    height: 280px;
     position: absolute;
     width: 40%;
+}
+.footer {
+    background-color: #EEEEEE;
+    border-top: 1px solid #E5E5E5;
+    box-shadow: 0 none transparent;
+    padding: 30px 0;
+    text-shadow: 0 1px 0 #FFFFFF;
 }
 #doormat-container {
     margin:0;
@@ -340,7 +759,7 @@ div.scrollable div.items div.itemPadding {
 }
 #doormat-container .doormatColumn {
     float: left;
-    margin: 8px;
+    margin: 1%;
 }
 .footer-inline{
     border-top:white 1px solid;
@@ -400,9 +819,6 @@ div.scrollable div.items div.itemPadding {
     line-height:35px;
     font-weight: normal;
 }
-#right-column{
-    width:33%; 
-}
 #right-column-content .portlet .odd{
     background-color:#c1c1c1;
     height:400px;
@@ -422,12 +838,6 @@ div.scrollable div.items div.itemPadding {
 .twocolumns{
     position:relative;
     bottom:40px;
-    width: 60%;
-}
-.section-front-page #center-column{
-    position:relative;
-    bottom:40px;
-    width:60%;
 }
 .portletItem{
     background-color:#c1c1c1;
@@ -473,7 +883,7 @@ div.scrollable div.items div.itemPadding {
 .section-front-page .form-rows span.option{
     float: left;
     clear: none;
-
+    
 }
 #right-column-content{
     padding:0;   
@@ -526,9 +936,12 @@ div.scrollable div.items div.itemPadding {
     width: 30%;
     float: left;
     clear: none;
-    margin-left:47px;
 }
-.section-front-page .field input[type="text"] {
+.section-front-page #form-widgets-price_min {
+    width: 115%;
+    height: 16px;
+}
+.section-front-page #form-widgets-price_max {
     width: 115%;
     height: 16px;
 }
@@ -610,7 +1023,7 @@ div.scrollable div.items div.itemPadding {
     color: #598c0b;
     margin-top:30px;
     margin-bottom:30px;
-    margin-left:79px;
+    margin-left: 35%;
 }
 .section-front-page #form-buttons-search:hover {
     background-position:0px;
@@ -683,7 +1096,6 @@ div.scrollable div.items div.itemPadding {
     padding:0px;
  }
 .listing-summary .option {
-    width: 21%;
     font-size:8px;
     color:#598c0b;
 }
@@ -841,7 +1253,7 @@ div.scrollable div.items div.itemPadding {
     padding: 2px 25px; 
     font-weight: normal;
     color: #598c0b;
-    margin-left: 700px;
+    margin:0;
 }
 .listing-summary #content {
     height:auto;
@@ -872,13 +1284,13 @@ div.scrollable div.items div.itemPadding {
  }
 .listing-summary #formfield-form-widgets-location_type span{
     color:#598c0b;
-    font-size:8px;
+    font-size:11px;
     font-weight: bold;
     margin-left:10px;
  }
 .listing-summary .formPanel span{
     color:#598c0b;
-    font-size:8px;
+    font-size: 11px;
     font-weight: bold;
     margin-left:10px;  
  }
@@ -1040,7 +1452,6 @@ img.image-left, img.image-right, .captioned img {
 .portletAgentInformation .portletItem .contact_details {
     margin-top: 1em;
     word-wrap: break-word;
-    padding-left: 50px;
 }
 #contact_details dd{
     float: none;
@@ -1055,27 +1466,21 @@ img.image-left, img.image-right, .captioned img {
 .portletAgentInformation .portletItem .contact_details dd {
     float: none;
     line-height: 19px;
-    width: 100%;
+    width: 120%;
 }
 .portletAgentInformation p{
     padding-left:10px;
     padding-top:10px;
 }
 .portletAgentInformation h3{
-    padding-left:10px;
     padding-top:10px;
     font-size: 14px;
     font-weight: 700;
     font-style: italic;
     color:#598c0b;
     font-weight:normal;
-    padding-left: 50px;
 }
 .portletAgentInformation .portletItem .agent_title{
-    padding-left: 50px;
-    padding-top: 0px;
-}
-.portletAgentInformation .portletItem .agency_name{
     padding-left: 50px;
     padding-top: 0px;
 }
@@ -1110,9 +1515,6 @@ figcaption {
 div.row {
     width:100%;   
 }
-#center-column.nocolumns {
-    width: 100%;
-}
 .listing-summary #search-form #form-row-listing-type{
     padding:0;
     width: 98%;
@@ -1130,6 +1532,7 @@ div.row {
 #content ul.formTabs {
     background-color:transparent;
     border:0;
+    width: 70%;
 }
 .listing-summary #search-form #formfield-form-widgets-baths{
     margin:0;
@@ -1207,11 +1610,179 @@ dl{
 #content div.documentByLine {
     display: none;
 }
-.label:after {
-    content: '\A';
-    white-space: pre;
-}
 input[type="submit"] {
     margin-bottom:10px;
     margin-left:95px;
+}
+#form-row-other label{
+    color:#598c0b;
+}
+.cell.width-full.position-0 {
+    padding-top: 30px;
+}
+#listing-search h2{
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: normal;
+    color: #598c0b;
+}
+#listing-search .listingBar a:hover{
+    color: #fff;
+    background-color: #598c0b;
+    transition: 0.1s linear all;
+    border-color: #ddd;
+    text-decoration: none;   
+}
+#listing-search .listingBar a{
+    color: #598c0b;
+    margin: 3px;
+    padding: 3px 6px;   
+}
+#listing-search h2.tileHeadline a {
+    font-size: 15px;
+    color: #598c0b;
+    font-weight: normal;
+}
+#listing-search .tileItem.visualIEFloatFix {
+    border-top: 2px dotted #c1c1c1;
+}
+.portletAgentContact input[type="text"]{
+    width: 90%;
+    border: 1px solid #c1c1c1;
+    background-image: linear-gradient(#f0f0f0, #e1e1e1);
+    -webkit-box-shadow: 0 0 1em #888888;
+    -moz-box-shadow: 0 0 1em #888888;
+    box-shadow: 0 0 1em #888888;
+    color: #000;
+}
+.portletAgentContact textarea{
+    width: 90%;
+    border: 1px solid #c1c1c1;
+    background-image: linear-gradient(#f0f0f0, #e1e1e1);
+    -webkit-box-shadow: 0 0 1em #888888;
+    -moz-box-shadow: 0 0 1em #888888;
+    box-shadow: 0 0 1em #888888;
+    color: #000;
+}
+.portletAgentInformation .portletItem .contact_details dt{
+    width:45%;
+}
+.btn.btn-navbar {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 8px;
+    border-radius: 0;
+    padding-top: 8px;
+}
+.nav-collapse .dropdown-menu a{
+    color:#fff;
+    background-color: #70A51E;
+    font-weight:normal;
+    margin-bottom: 0;
+}
+.nav-collapse .dropdown-menu li+li a {
+    margin-bottom: 0;
+}
+.nav-collapse .dropdown-menu a:hover{
+     color:#000;
+     background-color: #70A51E;
+     background-image: linear-gradient(#fef7ac, #ffffff);
+     font-weight:normal;  
+}
+.section-front-page .portletQuickSearch {
+    box-shadow: 0 0 1em #888888;
+}
+.portletAgentContact {
+   box-shadow: 0 0 1em #888888;   
+}
+.portletAgentInformation {
+   box-shadow: 0 0 1em #888888;   
+}
+.rowlike{
+    margin:0;
+    box-shadow:none;
+} 
+div.formControls{
+    margin:0; 
+    box-shadow:none;
+}
+.portlet-footer {
+  border:0 none transparent;   
+}
+.portletCalendar{
+    box-shadow: 0 0 1em #888888;
+}
+.portletCalendar a{
+    padding-left: 30px;
+    padding-right: 30px;
+    color:#000;
+}
+.portletCalendar a, .portletCalendar a:focus,
+.portletCalendar a, .portletCalendar a:hover,
+.ploneCalendar a {
+    color:#ddd;   
+}
+.ploneCalendar .todaynoevent {
+    border: 2px solid #598c0b;
+}
+#section-front-page #form-widgets-price_min{
+   width: 100%;   
+}
+.portletNavigationTree h4{
+   display:none; 
+}
+.portletNavigationTree{
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+    color:#fff;
+    box-shadow: 0 0 1em #888888;
+}
+.portletNavigationTree a{
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+    color:#000;
+    border: 1px solid #888;
+    border-radius:5px;
+}
+.portletNavigationTree span{
+    font-size:11px;
+}
+.navTree {
+    list-style: none;
+    margin: 0px;
+    padding: 5%;
+}
+.navTreeItem{
+    padding-bottom:5px;
+}
+.navTree .navTreeItem a {
+    display: block;
+    line-height: inherit;
+    background: none;
+    padding: 5px !important;
+    background-color: #fff;
+}
+.navTree .navTreeItem a:hover {
+    color:#fff;
+    background-color: #598C0B;
+    background-image: radial-gradient(#85B30B 475px, #598C0B 950px);
+    transition: 0.1s linear all;
+}
+.navTree .navTreeItem a:hover li{
+    color:#000;
+    background-color: #598C0B;
+    background-image: radial-gradient(#85B30B 475px, #598C0B 950px);
+    transition: 0.1s linear all;
+}
+.portletNavigationTree li a:hover {
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+    color:#000;
+}
+#portal-languageselector li.language-en{
+    display:none;   
+}
+#portal-languageselector ul{
+    box-shadow: 0 0 1em #888888;
+}
+#portal-siteactions li a:hover {
+    color: #fff;
 }
