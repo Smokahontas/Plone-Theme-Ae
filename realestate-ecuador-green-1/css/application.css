@@ -229,6 +229,12 @@ body{
     #footer-bg {
         border-top-left-radius: 100%;
     }
+    .section-front-page #form-widgets-location_state{
+         width: 88%;
+    }
+    .movelogin{
+        margin-top:19%;
+    }
 }  
 @media(min-width:980px) and (max-width:1199px) { 
     .container,.navbar-inner,
@@ -270,8 +276,15 @@ body{
     #footer-bg {
         border-top-left-radius: 100%;
     }
+    .section-front-page #form-widgets-location_city{
+        width: 85%;
+        height: 16px;
+    }
+    .movelogin ,.movelogin2{
+        margin-top:21%;
+    }
 }
-@media(min-width:768px) and (max-width:979px) {
+@media(min-width:770px) and (max-width:979px) {
     .container,.navbar-inner,
     .navbar-inner .container,
     .navbar-fixed-top .container, .navbar-fixed-bottom .container,
@@ -356,6 +369,10 @@ body{
         position: absolute;
         width: 40%;
     }
+    .movelogin ,.movelogin2{
+        margin-top:29%;
+        margin-left:5%;
+    }
 }
 @media(max-width:769px) {
     .container,.navbar-inner,
@@ -374,8 +391,8 @@ body{
         width: 80%;
         height: 16px;
     }
-    .section-front-page .select-widget {
-        width: 82%;
+    .section-front-page #form-widgets-location_state{
+         width: 82%;
     }
     .navbar-fixed-top .navbar-inner, 
     .navbar-fixed-bottom .navbar-inner{
@@ -434,7 +451,7 @@ body{
     }
     #footer-bg {
         height:100%;
-        border-top-left-radius: 40%;
+        border-top-left-radius: 0%;
     }
     #footer-bg-color {
         height:100%;
@@ -474,6 +491,16 @@ body{
         border-top-color: #598c0b;
         color:#000; 
         font-weight:normal;
+    }
+    #doormat-container dl{
+        text-align: center;
+    }
+    #doormat-container.columns-3 .doormatColumn{
+        width:100%;   
+    }
+    .movelogin ,.movelogin2{
+        margin-top:30%;
+        margin-left:8%;
     }
 }
 @media(max-width:648px) {
@@ -533,6 +560,20 @@ body{
     #portal-colophon{
         position: relative;
         left: 18%;
+    }
+    #doormatColumn column-0{
+        float: left;
+        width: 100%;
+        text-align: center;   
+    }
+    #doormatColumn column-1{
+        float: left;
+        width: 100%;
+        text-align: center;   
+    }
+    #doormatColumn column-2{
+        width: 100%;
+        text-align: center;   
     }
 }
 @media(max-width:500px) {
@@ -596,6 +637,10 @@ body{
     #portal-colophon{
         position: relative;
         left: 12%;
+    }
+    .movelogin ,.movelogin2{
+        margin-top:90%;
+        margin-left:5%;
     }
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -661,11 +706,7 @@ body{
     width: 40%;
 }
 .footer {
-    background-color: #EEEEEE;
-    border-top: 1px solid #E5E5E5;
-    box-shadow: 0 none transparent;
-    padding: 30px 0;
-    text-shadow: 0 1px 0 #FFFFFF;
+    box-shadow: none;
 }
 #doormat-container {
     margin:0;
@@ -701,9 +742,8 @@ body{
 }
 .movelogin{
     float:right;
-    position:relative;
+    position:absolute;
     right:10px;
-    bottom:12px;
     background-color:transparent;
     border-radius:0;
 }
@@ -714,11 +754,11 @@ body{
 }
 .movelogin2{
     float:right;
-    position:relative;
+    position:absolute;
     right:10px;
-    bottom:12px;
     background-color:transparent;
     border-radius:0;
+    margin-top:20%;
 }
 .movelogin2 a{
     color: #598c0b;
@@ -893,10 +933,6 @@ div.scrollable div.items div.itemPadding {
 }
 .section-front-page input[type="radio"], input[type="checkbox"] {
     margin: 7px 0px;   
-}
-.section-front-page #form-widgets-location_city{
-    width: 85%;
-    height: 16px;
 }
 .section-front-page .select-widget{
     width:88%; 
@@ -1618,7 +1654,7 @@ input[type="submit"] {
     color:#598c0b;
 }
 .cell.width-full.position-0 {
-    padding-top: 30px;
+    padding-top: 8px;
 }
 #listing-search h2{
     font-size: 16px;
