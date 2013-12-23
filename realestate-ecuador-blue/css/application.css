@@ -184,7 +184,7 @@ body{
          width: 88%;
     }
     .portletAgentInformation p {
-        padding-left: 10px;
+        padding-left: 17%;
         padding-top: 10px;
     }
     .listing-summary #search-form #formfield-form-widgets-baths {
@@ -234,6 +234,17 @@ body{
     width: 50%;
     float: left;
     clear: none;
+    }
+    .threecolumns{
+        width:60%   
+    }
+    #left-column {
+        width:33%;   
+    }
+    .section-news #right-column {
+        width: 33%;
+        float: right;
+        margin-left:0;
     }
 }
 @media screen and (max-width:1199px) { 
@@ -315,7 +326,7 @@ body{
         width:90% !important;
     }
     #left-column-content #formfield-form-widgets-listing_type .option {
-        width: 60%;
+        width: 50%;
         float: left;
         clear: none;
     }
@@ -323,6 +334,20 @@ body{
         width: 60%;
         float: left;
         clear: none;
+    }
+    .threecolumns{
+        width:60%   
+    }
+    #left-column {
+        width:33%;   
+    }
+    .section-news #right-column {
+        width: 33%;
+        float: right;
+        margin-left:0;
+    }
+    .listing-summary .form-row-tabbed span.option {
+        width: 28%;
     }
 }
 @media screen and (max-width:979px) {
@@ -432,6 +457,17 @@ body{
         float: left;
         clear: none;
     }
+    .threecolumns{
+        width:60%   
+    }
+    #left-column {
+        width:33%;   
+    }
+    .section-news #right-column {
+        width: 33%;
+        float: right;
+        margin-left:0;
+    }
 }
 @media screen and (max-width:769px) {
     .container,.navbar-inner,
@@ -496,16 +532,7 @@ body{
          width: 50%;
         padding-left: 5%; 
     }
-    .listing-summary #search-form form span.option {
-        float: left;
-        height: 20px;
-        width: 100%;
-    }
-    .listing-summary #search-form form span.option {
-        float: left;
-        height: 20px;
-        width: 31%;
-    }
+
     #footer-bg {
         height:100%;
         border-top-left-radius: 0%;
@@ -609,6 +636,33 @@ body{
         width: 50%;
         float: left;
         clear: none;
+    }
+    .threecolumns{
+        width:100%   
+    }
+    #left-column {
+        width:100%;   
+    }
+    .section-news #right-column {
+        width: 100%;
+        float: right;
+        margin-left:0;
+    }
+    #left-column-content #formfield-form-widgets-listing_type .option {
+        width: 50%;
+        float: left;
+        clear: none;
+    }
+    .listing-summary #search-form .form-row-tabbed  span.option {
+        width: 45%;
+    }
+    .listing-summary .form-row-other span.option {
+        width: 31%;
+    }
+    .listing-summary .form-row-listing-type span.option {
+        float: left;
+        height: 20px;
+        width: 31%;
     }
 }
 @media screen and (max-width:648px) {
@@ -747,6 +801,11 @@ body{
     .listing #listing-images .galleria-container {
         width:90% !important;
     }
+    .section-news #right-column {
+        width: 100%;
+        float: right;
+        margin-left:0;
+    }
 }
 @media screen and (max-width:500px) {
     .container,.navbar-inner,
@@ -845,6 +904,13 @@ body{
     }
     .listing #listing-images .galleria-container {
         width:90% !important;
+    }
+    .listing-summary .form-row-tabbed span.option {
+        width: 45%;
+    }
+    .listing-summary #search-form .form-row-tabbed  span.option {
+        width: 50%;
+        white-space:normal
     }
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -1852,17 +1918,6 @@ ul, ol {
 .section-front-page #formfield-form-widgets-location_city input[type="text"]{
     width: 85%;
 }
-#left-column {
-    width:33%;   
-}
-.threecolumns{
-    width:60%   
-}
-.section-news #right-column {
-    width: 60%;
-    float: right;
-    margin-left:0;
-}
 .newsImage {
     width:100%;
     border:2px solid #ddd;
@@ -1894,7 +1949,8 @@ ul, ol {
     border-top-right-radius: 2px;
 }
 #left-column-content  #formfield-form-widgets-listing_type{
-    overflow:auto;   
+    overflow:auto;  
+    padding-top: 5%;
 }
 #left-column-content #form-widgets-location_state {
     width:88%;
@@ -2159,6 +2215,80 @@ ul, ol {
     float: left;
     clear: none;
 }
+.nav-tabs>.active>a, .nav-tabs>.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+#listing-search .form-row-tabbed .option .label {
+    display: inline-block;
+    width: 80%;
+    padding-left: 1.4em;
+}
+#listing-search .form-row-tabbed span.option input[type="checkbox"]{
+    position:absolute;
+    bottom:1px;
+}
+.listing-summary .form-row-tabbed span.option {
+    position:relative;
+    top:4px;
+}
+.section-content-cover .twocolumns{
+    margin: 0;   
+}
+.section-content-cover .cover-content .row {
+    margin-right:0;
+    margin-left:0;
+}
+.section-content-cover .row {
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+.cover-content{
+    background-color:#c1c1c1;   
+}
+.cover-content{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px;
+    -webkit-box-shadow: 0 0 1em #888888;
+    -moz-box-shadow: 0 0 1em #888888;
+    box-shadow: 0 0 1em #888888;
+    font-size: 11px;   
+}
+.cover-richtext-tile p{
+    Font-size:14px;
+    font-weight:bold;
+    margin-bottom:0;
+}
+.image-inline {
+    position: relative;
+    margin-top: 1%;
+}
+#content ul {
+    list-style-type: disc;
+    margin-left: 85px;
+}
+.cover-richtext-tile.tile-content p:last-of-type{
+    height: 30px;
+    margin-left:50px;
+}
+.cover-richtext-tile.tile-content p:first-of-type {
+    width: 54px;
+    float: left;
+}
+#content .cover-propertie p{
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+}
+
+
 /* --------------------------------------------------------------------------------------   IE 8  -------------*/
 
 .ie8 .smart-header .title h1 {
