@@ -509,6 +509,7 @@ body{
         position: relative;
         left: 23%;
     }
+    
     #portal-siteactions{
         position: relative;
         right: 27%;
@@ -721,7 +722,12 @@ body{
     }
     #portal-siteactions {
         margin-top:8px;
+        color: #fff;
+        position: relative;
+        top: 20px;
+        margin-bottom: 20px;
     }
+
     .listing-summary #search-form .form-row-beds-baths .field{
         width: 100%;
     }
@@ -1068,10 +1074,11 @@ div.scrollable div.items div.itemPadding {
 }
 #portal-colophon{
     font-size:8px; 
-    float:left;
 }
 .colophonWrapper{
     margin-top: 10px;
+    white-space: nowrap;
+    margin-right: 600px;
 }
 .f1{
     float:left;
