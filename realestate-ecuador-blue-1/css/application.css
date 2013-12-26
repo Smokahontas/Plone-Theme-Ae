@@ -57,6 +57,7 @@
 } 
 #portal-languageselector a{
     font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif; 
+    font-weight: normal;
 }
 #header{
     font-family: "Istok Web","Arial Black",Gadget,sans-serif;
@@ -155,7 +156,7 @@ body{
         width:33%; 
     }
     .section-front-page #formfield-form-widgets-price_max{
-         margin-left: 47px;  
+        margin-left: 12%;
     }
     .navbar-fixed-top .navbar-inner, 
     .navbar-fixed-bottom .navbar-inner{
@@ -246,6 +247,29 @@ body{
         float: right;
         margin-left:0;
     }
+    #right-column-content #form-widgets-location_state {
+        width:88%;
+    }
+    #right-column-content #form-widgets-location_city {
+        width:85%;
+        height: 16px;
+    }
+    .section-immobilien-suche #search-form form span.option {
+        float: left;
+        height: 20px;
+        width: 40%;
+    }
+    .section-immobilien-suche #search-form .form-row-other span.option {
+        float: left;
+        height: 20px;
+        width: 23%;
+    }
+    #right-column-content #formfield-form-widgets-price_max {
+        width: 35%;
+        float: left;
+        clear: none;
+        margin-left: 12%;
+    }
 }
 @media screen and (max-width:1199px) { 
     .container,.navbar-inner,
@@ -267,7 +291,7 @@ body{
         width:33%; 
     }
     .section-front-page #formfield-form-widgets-price_max{
-         margin-left: 47px;  
+         margin-left: 12%; 
     }
     .navbar-fixed-top .navbar-inner, 
     .navbar-fixed-bottom .navbar-inner{
@@ -349,6 +373,16 @@ body{
     .listing-summary .form-row-tabbed span.option {
         width: 28%;
     }
+    .section-immobilien-suche #search-form form span.option {
+        float: left;
+        height: 20px;
+        width: 40%;
+    }
+    .section-immobilien-suche #search-form .form-row-other span.option {
+        float: left;
+        height: 20px;
+        width: 23%;
+    }
 }
 @media screen and (max-width:979px) {
     .container,.navbar-inner,
@@ -374,7 +408,7 @@ body{
         width:100% ;
     }
     .section-front-page #formfield-form-widgets-price_max{
-         margin-left: 47px;  
+         margin-left: 12%; 
     }
     .listing-summary #search-form form span.option {
         width: 28%;
@@ -385,6 +419,11 @@ body{
     }
     #footer-bg-color {
         height:100%;
+    }
+    .section-immobilien-suche #search-form .form-row-other span.option {
+        float: left;
+        height: 20px;
+        width: 23%;
     }
     .portletAgentInformation .portletItem .contact_details,
     .portletAgentInformation h3 ,
@@ -468,6 +507,11 @@ body{
         float: right;
         margin-left:0;
     }
+    .section-immobilien-suche #search-form form span.option {
+        float: left;
+        height: 20px;
+        width: 40%;
+    }
 }
 @media screen and (max-width:769px) {
     .container,.navbar-inner,
@@ -503,7 +547,7 @@ body{
         width:100%;
     }
     .section-front-page #formfield-form-widgets-price_max{
-         margin-left: 64px;  
+         margin-left: 40px;
     }
     #portal-colophon{
         position: relative;
@@ -655,7 +699,7 @@ body{
         clear: none;
     }
     .listing-summary #search-form .form-row-tabbed  span.option {
-        width: 45%;
+        width: 50%;
     }
     .listing-summary .form-row-other span.option {
         width: 31%;
@@ -664,6 +708,24 @@ body{
         float: left;
         height: 20px;
         width: 31%;
+    }
+    #right-column-content #form-widgets-location_city {
+        width: 80%;
+        height: 16px;
+    }
+    #right-column-content #form-widgets-location_state {
+        width: 82%;
+    }
+    .section-immobilien-suche #search-form form span.option {
+        float: left;
+        height: 20px;
+        width: 60%;
+    }
+    #right-column-content #formfield-form-widgets-price_max {
+        width: 35%;
+        float: left;
+        clear: none;
+        margin-left: 7%;
     }
 }
 @media screen and (max-width:648px) {
@@ -812,6 +874,11 @@ body{
         float: right;
         margin-left:0;
     }
+    .section-immobilien-suche #search-form form span.option {
+        float: left;
+        height: 20px;
+        width: 60%;
+    }
 }
 @media screen and (max-width:500px) {
     .container,.navbar-inner,
@@ -917,6 +984,11 @@ body{
     .listing-summary #search-form .form-row-tabbed  span.option {
         width: 50%;
         white-space:normal
+    }
+    .section-immobilien-suche #search-form form span.option {
+        float: left;
+        height: 20px;
+        width: 80%;
     }
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -1892,7 +1964,7 @@ div.formControls{
     font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
 }
 #portal-languageselector li.language-en{
-    display:none;   
+      
 }
 #portal-languageselector ul{
     box-shadow: 0 0 1em #888888;
@@ -2078,13 +2150,6 @@ ul, ol {
 #right-column-content  #formfield-form-widgets-listing_type{
     overflow:auto;   
 }
-#right-column-content #form-widgets-location_state {
-    width:88%;
-}
-#right-column-content #form-widgets-location_city {
-    width:85%;
-    height: 16px;
-}
 #right-column-content #formfield-form-widgets-beds{
     width: 100%;
 }
@@ -2120,17 +2185,11 @@ ul, ol {
     float: left;
     clear: none;
 }
-#right-column-content #formfield-form-widgets-price_max {
-    width: 35%;
-    float: left;
-    clear: none;
-}
 #right-column-content #form-widgets-price_min {
     width: 100%;
 }
 #right-column-content #form-widgets-price_max {
     width: 100%;
-    margin-left: 19px;
 }
 #right-column-content #formfield-form-widgets-lot_size {
     width: 100%;
@@ -2278,8 +2337,7 @@ ul, ol {
     margin-top: 1%;
 }
 #content ul {
-    list-style-type: disc;
-    margin-left: 85px;
+
 }
 .cover-richtext-tile.tile-content p:last-of-type{
     height: 30px;
@@ -2295,6 +2353,139 @@ ul, ol {
     margin-left: 0px;
 }
 
+.cover-pic1, .cover-pic2, .cover-pic3, .cover-pic4{
+    background-image: linear-gradient(#dfe8ef, #ccd8e0);
+    -webkit-box-shadow: 0 0 1em #888888;
+    -moz-box-shadow: 0 0 1em #888888;
+    box-shadow: -0.2em 0.5em 0.8em #cccccc;
+    height: 140px !important;
+    border:1px solid #c1c1c1;
+    padding-left:4px;
+}
+.cover-pic1 ul, .cover-pic2 ul, .cover-pic3 ul, .cover-pic4 ul{
+    list-style-type: disc;
+    margin-left: 85px;
+    position: relative;
+    bottom: 40px;
+}
+#d57781234c3d4c88bc5a53a494553a78 ul {
+    list-style-type: disc;
+    margin-left: 85px;
+    position: relative;
+    bottom: 40px;
+}
+#b46379d1d1a241618412db65205adb2b ul {
+    list-style-type: disc;
+    margin-left: 85px;
+    position: relative;
+    bottom: 40px;
+}
+#ed95a206c51a407fbd49c36ba6363b7f ul {
+    list-style-type: disc;
+    margin-left: 85px;
+    position: relative;
+    bottom: 40px;
+}
+#fac61916e6d84676a3878061d868b131 ul {
+    list-style-type: disc;
+    margin-left: 85px;
+    position: relative;
+    bottom: 40px;
+}
+.cover-pic1 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+}
+.cover-pic2 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic3 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic4 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+#content a:hover, dl.portlet a:hover {
+    color: #005580 !important;
+    border:none;
+}
+.cover-header1 h2{
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -o-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    line-height: 35px;
+    font-weight: normal;
+    padding-left:15px;
+}
+.cover-header2 p{
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -o-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    line-height: 35px;
+    font-weight: normal;
+    padding-left:15px;
+}
+.cover-header1{
+    background: none repeat scroll 0 0 #0f5584;
+    color: #fff !important;
+}
+
+.cover-header2{
+    background: none repeat scroll 0 0 #0f5584;
+    color: #fff !important;
+}
+.cover-header2 p ,.cover-header1 h2{
+    margin-bottom: 0px !important;   
+}
+.section-beliebte-suchen #right-column-content #formfield-form-widgets-listing_type .option {
+    width: 100%;
+    float: left;
+    clear: none;  
+}
+.section-beliebte-suchen #right-column-content #formfield-form-widgets-object_type .collapse .option {
+    width: 100% !important;
+    float: left;
+    clear: none;
+}
+#portal-languageselector:hover li{
+    display:block;
+}
+#portal-languageselector li{
+    display:none;
+}
+#portal-languageselector li.currentLanguage{
+    display:block;
+}
+.portletNavigationTree a:hover{
+    color:#fff !important;   
+}
+.listing-title a{
+    border:none;   
+}
 
 /* --------------------------------------------------------------------------------------   IE 8  -------------*/
 
