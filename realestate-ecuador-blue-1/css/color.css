@@ -80,11 +80,14 @@ body{
 @media(min-width:770px) and (max-width:979px) {
     #topnav-collapse{
         background-color:#fff;
-        border: 1px solid #FFFDD6;
+        border: 1px solid #ddd;
         color:#fff;
+        -webkit-box-shadow: 0 0 1em #888888;
+        -moz-box-shadow: 0 0 1em #888888;
+        box-shadow: -0.2em 0.5em 0.8em #cccccc;
     }
     .navbar .nav .active,.navbar .nav .active:hover {
-       background-color: #FFFAA2;
+        background-color: #FFFAA2;
         border: 1px dotted #0f5584;
         border-bottom-color: #0f5584;
         border-top-color: #0f5584;
@@ -106,9 +109,6 @@ body{
         color:#fff; 
         background-image: url("../img/blue_menu.png");
     }
-    .footer-bg{
-        background: radial-gradient(#2c7785 475px, #0f5584 950px) no-repeat scroll 0 0 #0000FF;
-    }
 }
 @media(max-width:769px) {
     .listing-summary #search-form form span.option {
@@ -119,8 +119,11 @@ body{
     }
      #topnav-collapse{
         background-color:#fff;
-        border: 1px solid #FFFDD6;
+        border: 1px solid #ddd;
         color:#fff;
+        -webkit-box-shadow: 0 0 1em #888888;
+        -moz-box-shadow: 0 0 1em #888888;
+        box-shadow: -0.2em 0.5em 0.8em #cccccc;
     }
     .navbar .nav .active,.navbar .nav .active:hover {
        background-color: #FFFAA2;
@@ -149,8 +152,11 @@ body{
 @media(max-width:648px) {
      #topnav-collapse{
         background-color:#fff;
-        border: 1px solid #FFFDD6;
+        border: 1px solid #ddd;
         color:#fff;
+        -webkit-box-shadow: 0 0 1em #888888;
+        -moz-box-shadow: 0 0 1em #888888;
+        box-shadow: -0.2em 0.5em 0.8em #cccccc;
     }
     .navbar .nav .active,.navbar .nav .active:hover {
        background-color: #FFFAA2;
@@ -179,8 +185,11 @@ body{
 @media(max-width:500px) {
      #topnav-collapse{
         background-color:#fff;
-        border: 1px solid #FFFDD6;
+        border: 1px solid #ddd;
         color:#fff;
+        -webkit-box-shadow: 0 0 1em #888888;
+        -moz-box-shadow: 0 0 1em #888888;
+        box-shadow: -0.2em 0.5em 0.8em #cccccc;
     }
     .navbar .nav .active,.navbar .nav .active:hover {
        background-color: #FFFAA2;
@@ -217,9 +226,6 @@ body{
 }
 #footer-bg-color{
     background: radial-gradient(#2c7785 205px, #0f5584 750px) repeat scroll 0 0 #FF0000;
-}
-#footer-bg{
-    background: radial-gradient(#2c7785 15px, #0f5584 600px) no-repeat scroll 0 0 #0000FF;
 }
 .adtext11{
     text-shadow: 2px 2px 2px #0f5584;
@@ -359,10 +365,10 @@ body{
     box-shadow: 0 0 1em #888888;
     font-size: 11px;
 }
-.section-front-page #form-buttons-search{
+#form-buttons-search{
     color: #0f5584;
 }
-.section-front-page #form-buttons-search:hover {
+#form-buttons-search:hover {
     color: #fff;
     background-image: url("../img/blue_menu.png");
 }

@@ -270,6 +270,44 @@ body{
         clear: none;
         margin-left: 12%;
     }
+    #portal-siteactions {
+        font-size: 8px;
+        position: relative;
+        bottom: 40px;
+    }
+    .cover-pic1 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+}
+.cover-pic2 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic3 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic4 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+    }
+    #footer-bg {
+        background: radial-gradient(#2c7785 85px, #0f5584 600px) no-repeat scroll 0 0 #0000FF;
+    }
+    #footer-bg-color {
+        position: absolute;
+        right: 0;
+        width: 60%;
+    }
 }
 @media screen and (max-width:1199px) { 
     .container,.navbar-inner,
@@ -302,6 +340,11 @@ body{
     }
     #footer-bg-color {
         height:100%;
+    }
+    #portal-siteactions {
+        font-size: 8px;
+        position: relative;
+        bottom: 40px;
     }
     .portletAgentInformation .portletItem .contact_details,
     .portletAgentInformation h3 ,
@@ -383,6 +426,39 @@ body{
         height: 20px;
         width: 23%;
     }
+.cover-pic1 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+}
+.cover-pic2 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic3 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic4 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+    #footer-bg {
+        background: radial-gradient(#2c7785 85px, #0f5584 600px) no-repeat scroll 0 0 #0000FF;
+    }
+    #footer-bg-color{
+    position: absolute;
+    right: 0;
+    width: 60%;
+}
 }
 @media screen and (max-width:979px) {
     .container,.navbar-inner,
@@ -419,6 +495,14 @@ body{
     }
     #footer-bg-color {
         height:100%;
+        position: absolute;
+        right: 0;
+        width: 60%;
+}
+    #portal-siteactions {
+        font-size: 8px;
+        position: relative;
+        bottom: 40px;
     }
     .section-immobilien-suche #search-form .form-row-other span.option {
         float: left;
@@ -512,6 +596,13 @@ body{
         height: 20px;
         width: 40%;
     }
+    .cover-pic1 h2,.cover-pic2 h2,.cover-pic3 h2{
+        font-size: 14px;
+        margin-left: 40px;
+        position: absolute;
+        top: 5px;
+        width: 100%;
+    }
 }
 @media screen and (max-width:769px) {
     .container,.navbar-inner,
@@ -579,11 +670,14 @@ body{
     }
 
     #footer-bg {
-        height:100%;
-        border-top-left-radius: 0%;
+        display:none;
     }
     #footer-bg-color {
         height:100%;
+        background: radial-gradient(#2c7785 100px, #0f5584 700px) repeat scroll 0 0 #FF0000;
+        width: 100%;
+        position: absolute;
+        right: 0;
     }
      #topnav-collapse{
         font-weight:normal;
@@ -727,6 +821,41 @@ body{
         clear: none;
         margin-left: 7%;
     }
+    #portal-siteactions {
+        font-size: 8px;
+        position: relative;
+        bottom: 70px;
+    }
+    #portal-siteactions {
+        font-size: 8px;
+        position: relative;
+        bottom: 50px;
+    }
+    .cover-pic1 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+}
+.cover-pic2 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic3 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic4 h2{
+    font-size: 14px;
+    margin-left: 70px;
+    position: absolute;
+    top: 10px;
+}
 }
 @media screen and (max-width:648px) {
     .container,.navbar-inner,
@@ -783,11 +912,9 @@ body{
         text-align: center;   
     }
     #portal-siteactions {
-        margin-top:8px;
-        color: #fff;
+        font-size: 8px;
         position: relative;
-        top: 20px;
-        margin-bottom: 20px;
+        bottom: 50px;
     }
 
     .listing-summary #search-form .form-row-beds-baths .field{
@@ -879,6 +1006,32 @@ body{
         height: 20px;
         width: 60%;
     }
+    .cover-pic1 h2{
+    font-size: 14px;
+    margin-left: 50px;
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+}
+.cover-pic2 h2{
+    font-size: 14px;
+    margin-left: 50px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic3 h2{
+    font-size: 14px;
+    margin-left: 50px;
+    position: absolute;
+    top: 10px;
+}
+.cover-pic4 h2{
+    font-size: 14px;
+    margin-left: 50px;
+    position: absolute;
+    top: 10px;
+}
+
 }
 @media screen and (max-width:500px) {
     .container,.navbar-inner,
@@ -912,19 +1065,21 @@ body{
     .navbar .nav .active>a,.navbar .nav .active>a:hover{
         font-weight:normal;
     }
+    #portal-siteactions {
+        padding-right: 0;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        left: 60px;
+}
     #portal-logo{
         display:none;   
-    }
-    #portal-siteactions {
-        position: relative;
-        padding-right: 0;
-        right:13%;
-        margin-top:8px;
     }
     #portal-colophon{
         position: relative;
         left: 12%;
     }
+    
     .listing-summary #search-form .form-row-other #formfield-form-widgets-air_condition{
         float: left;
         width: 100%;  
@@ -990,6 +1145,34 @@ body{
         height: 20px;
         width: 80%;
     }
+    .cover-pic1 h2{
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    font-weight: bold;
+    margin-left: 0;
+}
+.cover-pic2 h2{
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    font-weight: bold;
+    margin-left: 0;
+}
+.cover-pic3 h2{
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    font-weight: bold;
+    margin-left: 0;
+}
+.cover-pic4 h2{
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    font-weight: bold;
+    margin-left: 0;
+    }
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
@@ -1033,11 +1216,6 @@ body{
     position:relative;
     background:transparent none no-repeat;
     float:right;
-}
-#footer-bg-color{
-    position: absolute;
-    right: 0;
-    width: 60%;
 }
 #footer-bg{
     position: absolute;
@@ -1352,7 +1530,7 @@ div.scrollable div.items div.itemPadding {
     height:25px;
     margin-left: 30px;
 }
-.section-front-page #form-buttons-search{
+#form-buttons-search{
     font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -1363,7 +1541,7 @@ div.scrollable div.items div.itemPadding {
     margin-bottom:30px;
     margin-left: 35%;
 }
-.section-front-page #form-buttons-search:hover {
+#form-buttons-search:hover {
     background-position:0px;
 }
 .listing-summary #search-form .form-row-location {
@@ -2392,31 +2570,6 @@ ul, ol {
     position: relative;
     bottom: 40px;
 }
-.cover-pic1 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-    font-weight: bold;
-}
-.cover-pic2 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-}
-.cover-pic3 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-}
-.cover-pic4 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-}
 #content a:hover, dl.portlet a:hover {
     color: #005580 !important;
     border:none;
@@ -2486,7 +2639,24 @@ ul, ol {
 .listing-title a{
     border:none;   
 }
-
+.state-published {
+    color: #000 !important;
+}
+.state-published:hover {
+    color: #fff !important;
+}
+#right-column-content #formfield-form-widgets-price_max {
+    width: 35%;
+    float: left;
+    clear: none;
+}
+#right-column-content .portlet{
+    vertical-align: top;
+    -webkit-box-shadow: 0 0 1em #888888;
+    -moz-box-shadow: 0 0 1em #888888;
+    box-shadow: -0.2em 0.5em 0.8em #cccccc;
+    
+}
 /* --------------------------------------------------------------------------------------   IE 8  -------------*/
 
 .ie8 .smart-header .title h1 {
