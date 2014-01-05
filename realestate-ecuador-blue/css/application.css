@@ -351,6 +351,9 @@ body{
     .portletAgentInformation .portletItem .agency_name{
         padding-left: 8%;
     }
+    .agent_title {
+        padding-left: 8%;
+    }
     #footer-bg {
         border-top-left-radius: 100%;
     }
@@ -459,6 +462,9 @@ body{
     right: 0;
     width: 60%;
 }
+    #formfield-form-widgets-price_max {
+     margin-left: 12%;
+    }
 }
 @media screen and (max-width:979px) {
     .container,.navbar-inner,
@@ -512,7 +518,7 @@ body{
     .portletAgentInformation .portletItem .contact_details,
     .portletAgentInformation h3 ,
     .portletAgentInformation .portletItem .agency_name{
-        padding-left: 8%;
+        padding-left: 7%;
     }
     #topnav-collapse{
         font-weight:normal;
@@ -603,6 +609,9 @@ body{
         top: 5px;
         width: 100%;
     }
+    #form-widgets-location_city {
+        width: 90%;
+    }
 }
 @media screen and (max-width:769px) {
     .container,.navbar-inner,
@@ -653,6 +662,9 @@ body{
     }
     .agency-logo-wrapper .agency_logo {
         width: 100%;
+    }
+    .agent_title {
+        padding-left: 8%;
     }
     .listing-summary #search-form .form-row-other #formfield-form-widgets-air_condition{
         float: left;
@@ -832,30 +844,34 @@ body{
         bottom: 50px;
     }
     .cover-pic1 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-    font-weight: bold;
-}
-.cover-pic2 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-}
-.cover-pic3 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-}
-.cover-pic4 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-}
+        font-size: 14px;
+        margin-left: 70px;
+        position: absolute;
+        top: 10px;
+        font-weight: bold;
+    }
+    .cover-pic2 h2{
+        font-size: 14px;
+        margin-left: 70px;
+        position: absolute;
+        top: 10px;
+    }
+    .cover-pic3 h2{
+        font-size: 14px;
+        margin-left: 70px;
+        position: absolute;
+        top: 10px;
+    }
+    .cover-pic4 h2{
+        font-size: 14px;
+         margin-left: 70px;
+         position: absolute;
+        top: 10px;
+    }
+    #global-content.portaltype-collective-cover-content #content{
+        margin-bottom:0;
+        padding-bottom:0;
+    }
 }
 @media screen and (max-width:648px) {
     .container,.navbar-inner,
@@ -1031,6 +1047,10 @@ body{
     position: absolute;
     top: 10px;
 }
+#content{
+    margin-bottom:0;
+    padding-bottom:0;
+}
 
 }
 @media screen and (max-width:500px) {
@@ -1150,28 +1170,41 @@ body{
     position: absolute;
     top: 2px;
     font-weight: bold;
-    margin-left: 0;
+    margin-left: 70px;
 }
 .cover-pic2 h2{
     font-size: 14px;
     position: absolute;
     top: 2px;
     font-weight: bold;
-    margin-left: 0;
+    margin-left: 70px;
 }
 .cover-pic3 h2{
     font-size: 14px;
     position: absolute;
     top: 2px;
     font-weight: bold;
-    margin-left: 0;
+    margin-left: 70px;
 }
 .cover-pic4 h2{
     font-size: 14px;
     position: absolute;
     top: 2px;
     font-weight: bold;
-    margin-left: 0;
+    margin-left: 70px;
+    }
+    .row .width-8{
+     width:100%; 
+     float:none;
+     clear:none;
+    }
+    .row .position-8 {
+        margin-left: -100%;
+        margin-top: 20px;
+    }
+    #content{
+    margin-bottom:0;
+    padding-bottom:0;
     }
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
@@ -1216,6 +1249,7 @@ body{
     position:relative;
     background:transparent none no-repeat;
     float:right;
+    overflow:hidden;
 }
 #footer-bg{
     position: absolute;
@@ -2656,6 +2690,54 @@ ul, ol {
     -moz-box-shadow: 0 0 1em #888888;
     box-shadow: -0.2em 0.5em 0.8em #cccccc;
     
+}
+.portletNews p{
+    padding:18px;
+    line-height:14px;
+}
+#global-content.portaltype-collective-cover-content #content{
+    background-color:transparent;   
+}
+#global-content.portaltype-collective-cover-content #content-core div.row .white-bg{
+    background-color:#fff;
+    padding:20px;
+}
+#global-content.portaltype-collective-cover-content #content-core div.row .white-bg2{
+    background-color:#fff;
+    padding-bottom:5px;
+    overflow:auto;
+}
+#global-content.portaltype-collective-cover-content #content-core div.row div.width-5{
+    width:35%;
+}
+#global-content.portaltype-collective-cover-content .testme {
+    float: left;
+    width: 33%;
+}
+#global-content.portaltype-collective-cover-content .testme .image-inline {
+    width: 90%;
+}
+.testme-header h2{
+    font-family: "Istok Web", "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -o-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    line-height: 35px;
+    font-weight: normal;
+    padding-left: 15px;
+    background: none repeat scroll 0 0 #0f5584;
+    color: #fff !important;
+}
+.listing-title a{
+    border:0 none transparent !important;   
+}
+#parent-fieldname-title {
+    display: none;
 }
 /* --------------------------------------------------------------------------------------   IE 8  -------------*/
 
