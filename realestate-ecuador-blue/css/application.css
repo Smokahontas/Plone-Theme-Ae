@@ -10,10 +10,22 @@
     margin:0;
     position:relative;
 }
-.section-front-page #header-full{
+.button-header{
+    position: absolute;
+    height: 30px;
+    width:100%;
+    left: 0;
+    top: 0;
+}
+#button-header-wrapper{
+    position:relative;
+    top: 11px;
+}
+
+#header-full{
     background:none;   
 }
-.section-front-page .background-wrapper {
+.background-wrapper {
     position: absolute;
     display: block;
     min-height: 157px;
@@ -39,25 +51,42 @@
     right: 20px;
     top: 6px;
     font-weight: normal;
-} 
+    } 
 .smart-header h1{
     margin-left:10px;  
     line-height:90px;
-}
+    }
 .language-switcher{
     display:none;
-}
-#portal-languageselector{
-    position: absolute;
-    float: right;
-    right: 17%;
-    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif; 
-    box-shadow: 0 0 1em #888888;
-    padding: 2px 18px;
-} 
+    }
 #portal-languageselector a{
     font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif; 
     font-weight: normal;
+    }
+#portal-languageselector a:hover {
+    border:0 none transparent;
+    }
+#portal-languageselector {
+    position: relative;
+    float: right;
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+    top: 8%;
+    border-radius: 3px !important;
+    padding: 0 22px;
+}
+#portal-languageselector a{
+    font-size:11px;
+    line-height: 30px;
+}
+#portal-personaltools {
+    position: relative;
+    float: right;
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+    padding: 0 15px;
+    top: 0;
+}
+#portal-personaltools dd {
+    padding-bottom: 0.5em;
 }
 #header{
     font-family: "Istok Web","Arial Black",Gadget,sans-serif;
@@ -227,14 +256,14 @@ body{
         width: 100% !important;
     }
     #left-column-content #formfield-form-widgets-listing_type .option {
-    width: 50%;
-    float: left;
-    clear: none;
+        width: 50%;
+        float: left;
+        clear: none;
     }
     #right-column-content #formfield-form-widgets-listing_type .option {
-    width: 50%;
-    float: left;
-    clear: none;
+        width: 50%;
+        float: left;
+        clear: none;
     }
     .threecolumns{
         width:60%   
@@ -276,11 +305,11 @@ body{
         bottom: 40px;
     }
     .cover-pic1 h2{
-    font-size: 14px;
-    margin-left: 70px;
-    position: absolute;
-    top: 10px;
-    font-weight: bold;
+        font-size: 14px;
+        margin-left: 70px;
+        position: absolute;
+        top: 10px;
+        font-weight: bold;
 }
 .cover-pic2 h2{
     font-size: 14px;
@@ -300,13 +329,22 @@ body{
     position: absolute;
     top: 10px;
     }
-    #footer-bg {
-        background: radial-gradient(#2c7785 85px, #0f5584 600px) no-repeat scroll 0 0 #0000FF;
-    }
     #footer-bg-color {
         position: absolute;
         right: 0;
         width: 60%;
+    }
+    .carousel-banners {
+        max-width:890px !important; 
+    }
+    .carousel-banner {
+        max-width:950px !important; 
+    }
+    .carousel-banner img{
+        max-width:93.8% !important;    
+    }
+    .carousel-banner p{
+        max-width:93.8% !important;    
     }
 }
 @media screen and (max-width:1199px) { 
@@ -453,10 +491,7 @@ body{
     margin-left: 70px;
     position: absolute;
     top: 10px;
-}
-    #footer-bg {
-        background: radial-gradient(#2c7785 85px, #0f5584 600px) no-repeat scroll 0 0 #0000FF;
-    }
+}    
     #footer-bg-color{
     position: absolute;
     right: 0;
@@ -464,6 +499,12 @@ body{
 }
     #formfield-form-widgets-price_max {
      margin-left: 12%;
+    }
+    .carousel-banner img{
+        width: 96.8% !important;
+    }
+    .carousel-banner p{
+        max-width:96.8% !important;    
     }
 }
 @media screen and (max-width:979px) {
@@ -612,6 +653,12 @@ body{
     #form-widgets-location_city {
         width: 90%;
     }
+    .carouselWrapper{
+        display:none;
+    }
+    .navbar-fixed-top{
+        margin-top:9px;
+    }
 }
 @media screen and (max-width:769px) {
     .container,.navbar-inner,
@@ -686,7 +733,6 @@ body{
     }
     #footer-bg-color {
         height:100%;
-        background: radial-gradient(#2c7785 100px, #0f5584 700px) repeat scroll 0 0 #FF0000;
         width: 100%;
         position: absolute;
         right: 0;
@@ -1051,6 +1097,12 @@ body{
     margin-bottom:0;
     padding-bottom:0;
 }
+    #right-column-content #formfield-form-widgets-price_max {
+    width: 35%;
+    float: left;
+    clear: none;
+    margin-left: 8%;
+}
 
 }
 @media screen and (max-width:500px) {
@@ -1091,9 +1143,6 @@ body{
         width: 100%;
         position: relative;
         left: 60px;
-}
-    #portal-logo{
-        display:none;   
     }
     #portal-colophon{
         position: relative;
@@ -1206,6 +1255,12 @@ body{
     margin-bottom:0;
     padding-bottom:0;
     }
+    #right-column-content #formfield-form-widgets-price_max {
+        width: 35%;
+        float: left;
+        clear: none;
+        margin-left: 10%;
+    }
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
     left: 0;
@@ -1279,8 +1334,6 @@ body{
 }
 #mylogo img{
  float:left; 
- width:54px;
- height:44px;
  position: relative;
  top: 5px;
 }
@@ -1289,12 +1342,24 @@ body{
     position: absolute;
     font-size: 30px
 }
-.movelogin{
-    float:right;
-    position:absolute;
-    right:10px;
-    background-color:transparent;
-    border-radius:0;
+.movelogin {
+    float: right;
+    position: relative;
+    background-color: transparent;
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+    padding: 2px 10px;
+}
+#portal-personaltools {
+    border-radius: 3px !important;   
+    z-index: 2000;
+}
+.actionMenuHeader a{
+    color: #362524;   
+}
+dl.actionMenu a, dl.actionMenu div {
+    display: block !important;
+    white-space: nowrap;
+    line-height: 30px;
 }
 .movelogin a{
     background-color:transparent;
@@ -1303,10 +1368,11 @@ body{
 .movelogin2{
     float:right;
     position:absolute;
-    right:10px;
     background-color:transparent;
     border-radius:0;
     margin-top:20%;
+    left: 71%;
+    bottom: 95.4%;
 }
 .movelogin2 a{
     background-color:transparent;
@@ -1357,7 +1423,8 @@ div.scrollable div.items div.itemPadding {
     font-size:8px;
 }
 #portal-colophon{
-    font-size:8px; 
+    font-size:8px;
+    position:relative;
 }
 .colophonWrapper{
     margin-top: 10px;
@@ -1632,7 +1699,6 @@ div.scrollable div.items div.itemPadding {
     transition: 0.1s linear all;
 }
 .listing-summary .formPanel{
-    border: 1px solid #b5b4b4;
     padding:0px;
  }
 .listing-summary .option {
@@ -2187,9 +2253,6 @@ table.listing tbody th {
 .breadcrumb {
     margin-bottom:5px;
 }
-.movelogin{
-        bottom:0;
-}
 #content dd {
     margin: 0;
 }
@@ -2230,11 +2293,9 @@ ul, ol {
     display:none   
 }
 #left-column-content .portletQuickSearch h4{
-    color: #fff;
     font-weight: normal;
     font-size: 16px;
     font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
-    background: none repeat scroll 0 0 #0f5584;
     line-height: 35px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2350,11 +2411,9 @@ ul, ol {
     display:none   
 }
 #right-column-content  h4{
-    color: #fff;
     font-weight: normal;
     font-size: 16px;
     font-family: "Istok Web", "Arial Black", Gadget, sans-serif !important;
-    background: none repeat scroll 0 0 #0f5584;
     line-height: 35px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -2494,10 +2553,7 @@ ul, ol {
     clear: none;
 }
 .nav-tabs>.active>a, .nav-tabs>.active>a:hover {
-    color: #555;
     cursor: default;
-    background-color: #ddd;
-    border: 1px solid #ddd;
     border-bottom-color: transparent;
 }
 #listing-search .form-row-tabbed .option .label {
@@ -2523,9 +2579,6 @@ ul, ol {
 .section-content-cover .row {
     margin-left: 0;
     margin-bottom: 20px;
-}
-.cover-content{
-    background-color:#c1c1c1;   
 }
 .cover-content{
     -webkit-border-radius: 5px;
@@ -2566,12 +2619,10 @@ ul, ol {
 }
 
 .cover-pic1, .cover-pic2, .cover-pic3, .cover-pic4{
-    background-image: linear-gradient(#dfe8ef, #ccd8e0);
     -webkit-box-shadow: 0 0 1em #888888;
     -moz-box-shadow: 0 0 1em #888888;
     box-shadow: -0.2em 0.5em 0.8em #cccccc;
     height: 140px !important;
-    border:1px solid #c1c1c1;
     padding-left:4px;
 }
 .cover-pic1 ul, .cover-pic2 ul, .cover-pic3 ul, .cover-pic4 ul{
@@ -2605,7 +2656,6 @@ ul, ol {
     bottom: 40px;
 }
 #content a:hover, dl.portlet a:hover {
-    color: #005580 !important;
     border:none;
 }
 .cover-header1 h2{
@@ -2636,15 +2686,6 @@ ul, ol {
     font-weight: normal;
     padding-left:15px;
 }
-.cover-header1{
-    background: none repeat scroll 0 0 #0f5584;
-    color: #fff !important;
-}
-
-.cover-header2{
-    background: none repeat scroll 0 0 #0f5584;
-    color: #fff !important;
-}
 .cover-header2 p ,.cover-header1 h2{
     margin-bottom: 0px !important;   
 }
@@ -2660,24 +2701,17 @@ ul, ol {
 }
 #portal-languageselector:hover li{
     display:block;
+    background-color:transparent;
 }
 #portal-languageselector li{
     display:none;
 }
 #portal-languageselector li.currentLanguage{
     display:block;
-}
-.portletNavigationTree a:hover{
-    color:#fff !important;   
+    background-color: transparent;
 }
 .listing-title a{
     border:none;   
-}
-.state-published {
-    color: #000 !important;
-}
-.state-published:hover {
-    color: #fff !important;
 }
 #right-column-content #formfield-form-widgets-price_max {
     width: 35%;
@@ -2688,8 +2722,7 @@ ul, ol {
     vertical-align: top;
     -webkit-box-shadow: 0 0 1em #888888;
     -moz-box-shadow: 0 0 1em #888888;
-    box-shadow: -0.2em 0.5em 0.8em #cccccc;
-    
+    box-shadow: -0.2em 0.5em 0.8em #cccccc; 
 }
 .portletNews p{
     padding:18px;
@@ -2699,11 +2732,9 @@ ul, ol {
     background-color:transparent;   
 }
 #global-content.portaltype-collective-cover-content #content-core div.row .white-bg{
-    background-color:#fff;
     padding:20px;
 }
 #global-content.portaltype-collective-cover-content #content-core div.row .white-bg2{
-    background-color:#fff;
     padding-bottom:5px;
     overflow:auto;
 }
@@ -2730,8 +2761,6 @@ ul, ol {
     line-height: 35px;
     font-weight: normal;
     padding-left: 15px;
-    background: none repeat scroll 0 0 #0f5584;
-    color: #fff !important;
 }
 .listing-title a{
     border:0 none transparent !important;   
@@ -2739,6 +2768,105 @@ ul, ol {
 #parent-fieldname-title {
     display: none;
 }
+.carousel-image {
+    max-width:93.8% !important;  
+}
+.carousel-text {
+    max-width:93% !important; 
+    position:relative;
+}
+.carousel-title{
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size:15px;
+}
+.carousel-title:hover{
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size:15px;
+}
+.carousel-pager-item{   
+    width: 1px;
+    height: 7px;
+    display: inline-block;
+    color: transparent  !important;;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.carousel-pager-item:hover{
+    color:transparent;
+}
+.carousel-pager-item-active {
+    color:transparent;
+    width: 1px;
+    height: 7px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.carousel-pager-item-active:link{
+    color:transparent;
+    width: 1px;
+    height: 7px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;  
+}
+.carousel-pager {
+    margin: 0.75em 0;
+    text-align: center;
+    }
+#recent-listings .tileItem.visualIEFloatFix {
+    -webkit-box-shadow: 0 0 1em #888888;
+    -moz-box-shadow: 0 0 1em #888888;
+    box-shadow: -0.2em 0.5em 0.8em #cccccc;
+    border: 1px solid #c1c1c1;
+    padding-left: 4px;
+}
+.carousel-pager .carousel-pager-button-prev{
+    background-image:url("../img/prev.png");
+    float:left;
+    width: 60px;
+    padding: 0;
+    height: 30px;
+    background-color:transparent;
+    color:transparent;
+}
+.carousel-pager .carousel-pager-button-next{
+    background-image:url("../img/next.png");
+    float:right; 
+    width: 60px;
+    padding: 0;
+    height: 30px;
+    background-color:transparent;
+    color:transparent;
+}
+.carousel-pager {
+    margin: 0.75em 0;
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+}
+.carouselWrapper {
+    margin-top: 40px;
+}
+.documentDescription {
+    padding: 0;
+    margin: 0;
+}
+#portal-personaltools .deactivated{
+    position: relative;
+    float: right;
+    font-family: "Cantora One", Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif;
+    top: 8%;
+    border-radius: 3px !important;
+    padding: 0 22px;
+}
+#anon-personalbar a {
+    line-height: 30px;
+    }
 /* --------------------------------------------------------------------------------------   IE 8  -------------*/
 
 .ie8 .smart-header .title h1 {
