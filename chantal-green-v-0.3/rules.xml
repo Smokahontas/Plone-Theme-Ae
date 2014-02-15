@@ -5,9 +5,16 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xi="http://www.w3.org/2001/XInclude"
     >
-    
-   
     <replace
+        css:theme=".casel1"
+        css:content=".lastCarousel"
+        method="raw"
+        />
+    <theme href="base.html" css:if-content="#visual-portal-wrapper"/>
+    <rules css:if-content="#visual-portal-wrapper">
+        
+    <drop css:content="meta[http-equiv='X-UA-Compatible']"/>
+     <replace
         css:theme="div.language-switcher"
         css:content="#portal-languageselector"
         />
@@ -26,11 +33,7 @@
         css:theme="div#test1"
         css:content="div#edit-bar"
         />
-    <replace
-        css:theme=".casel1"
-        css:content=".lastCarousel"
-        method="raw"
-        />
+    
     <replace
         css:theme=".casel1"
         css:content="#viewlet-above-content div.carousel"
@@ -58,32 +61,6 @@
         css:theme="div#global-content"
         />
     <replace theme="/html/head/title" content="/html/head/title" />
-
-    <theme href="base.html" css:if-content="#visual-portal-wrapper"/>
-    <theme href="dialog.html" css:if-content="#content.dialog-wrapper"/>
-    <drop css:content="meta[http-equiv='X-UA-Compatible']"/>
-    <rules css:if-content="#content.dialog-wrapper">
-        <prepend theme="/html/head" content="/html/head/base"/>
-        <after css:theme="meta[http-equiv='X-UA-Compatible']" 
-            content="/html/head/link | /html/head/style | /html/head/script | /html/head/meta" />
-        <replace theme="/html/body"
-            content="/html/body"/>
-    </rules>
-    <theme href="html5slides/template/index.html" css:if-content=".presentation"/>
-    <rules css:if-content=".presentation">
-         <replace css:theme-children="section">
-            <xsl:for-each css:select=".slide">
-                <article><xsl:attribute name="class">
-                        <xsl:if test="position()=1">
-                            slide-firstpage
-                        </xsl:if>
-                    </xsl:attribute>
-                    <xsl:copy-of select="current()"/>
-                </article>
-            </xsl:for-each>
-         </replace>
-    </rules>
-    <rules css:if-content="#visual-portal-wrapper">
       
     <prepend theme="/html/head" content="/html/head/base"/>
 
